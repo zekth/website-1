@@ -1,4 +1,4 @@
-baseURL = "https://reef-pi.com/"
+baseURL = "https://reef-pi.github.io"
 languageCode = "en-us"
 title = "reef-pi - A Rasoberry Pi based opensource reef tank controller"
 theme = "hugo-sustain"
