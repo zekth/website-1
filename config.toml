@@ -2,7 +2,7 @@ baseURL = "http://reef-pi.com/"
 languageCode = "en-us"
 title = "reef-pi - A Rasoberry Pi based opensource reef tank controller"
 theme = "hugo-sustain"
-publishDir = "docs"
+publishDir = "../reef-pi.github.io"
 
 [params]
 Author = "Ranjib Dey"
