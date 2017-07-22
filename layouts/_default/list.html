@@ -1,0 +1,26 @@
+{{ partial "head" . }}
+  <body>
+    <div id="wrap">
+      <!-- Header -->
+      {{ partial "header" . }}
+      <div class="container">
+        <h3>Guides</h3>
+          <div class="panel panel-default">
+            {{ range .Data.Pages.ByPublishDate }}
+            <div class="panel-body">
+              <div class="row">
+                 <div class="col-sm-8 col-md-8 col-lg-8">
+                   <h5 style="text-align: left">
+                    <strong><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></strong>
+                  </h5>
+                </div>
+              </div>
+            {{ end }}
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    {{ partial "footer" . }}
+  </body>
+</html>

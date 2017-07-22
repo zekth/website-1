@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "reef-pi - A Rasoberry Pi based opensource reef tank controller"
 theme = "hugo-sustain"
 publishDir = "../reef-pi.github.io"
+googleAnalytics = "UA-102968086-1"
 
 [params]
 Author = "Ranjib Dey"
@@ -12,3 +13,15 @@ Description = "reef-pi - A Rasoberry Pi based opensource reef tank controller"
   Github    = "reef-pi"
   Email     = "info@reef-pi.com"
   Twitter   = "reef_pi"
+
+[[menu.main]]
+  name = "blogs"
+  identifier = "blogs"
+  weight = 200
+  url = "/blogs/"
+
+[[menu.main]]
+  name = "guides"
+  identifier = "guides"
+  weight = 300
+  url = "/guides/"
