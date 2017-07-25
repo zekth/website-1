@@ -2,8 +2,9 @@
 author: "Ranjib Dey"
 date: 2017-07-21
 linktitle: Troubleshooting
-title: Troubleshooting
+title: How to troubleshoot and ask for help
 highlight: true
+weight: 4
 ---
 
 Check if reef-pi is running

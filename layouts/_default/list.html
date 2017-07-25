@@ -4,18 +4,19 @@
       <!-- Header -->
       {{ partial "header" . }}
       <div class="container">
-        <h3>Guides</h3>
+        <h3 style="text-align: left" >{{ .Title }}</h3>
           <div class="panel panel-default">
-            {{ range .Data.Pages.ByPublishDate }}
+					  <div class="row" style="text-align: left">
+					    {{ .Content }}
+					  </div>
             <div class="panel-body">
+							{{ range .Data.Pages.ByWeight }}
               <div class="row">
-                 <div class="col-sm-8 col-md-8 col-lg-8">
-                   <h5 style="text-align: left">
-                    <strong><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></strong>
-                  </h5>
-                </div>
+                <h5 >
+                  <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+                </h5>
               </div>
-            {{ end }}
+							{{ end }}
             </div>
           </div>
       </div>

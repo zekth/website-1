@@ -2,8 +2,9 @@
 author: "Ranjib Dey"
 date: 2017-07-20
 linktitle: Development environment guide
-title: Developer environment setup
+title: How to setup reef-pi development environment
 highlight: true
+weight: 5
 ---
 
 reef-pi is written in [go](https://golang.org/) and [react](https://facebook.github.io/react/). This guide will walk through the steps involved in

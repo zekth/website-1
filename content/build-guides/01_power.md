@@ -2,7 +2,8 @@
 author: "Ranjib Dey"
 date: 2017-07-21
 linktitle: Power controller build
-title: Building a power controller with reef-pi
+title: How to build a power controller
 highlight: true
+weight: 1
 ---
 

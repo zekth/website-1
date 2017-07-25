@@ -15,13 +15,20 @@ Description = "reef-pi - A Rasoberry Pi based opensource reef tank controller"
   Twitter   = "reef_pi"
 
 [[menu.main]]
-  name = "blogs"
-  identifier = "blogs"
-  weight = 200
-  url = "/blogs/"
+  name = "general guides"
+  identifier = "general-guides"
+  weight = 100
+  url = "/general-guides/"
 
 [[menu.main]]
-  name = "guides"
-  identifier = "guides"
+  name = "build guides"
+  identifier = "build-guides"
+  weight = 200
+  url = "/build-guides/"
+
+[[menu.main]]
+  name = "blogs"
+  identifier = "blogs"
   weight = 300
-  url = "/guides/"
+  url = "/blogs/"
+
