@@ -21,13 +21,8 @@ A temperature controller
 - Female audio jack (panel mount)
 
 
-### Tools 
-
 ### Wiring
 
-### Housing
 
 ### Configuration
-
-### Using temeprature controller
 
