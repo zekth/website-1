@@ -14,7 +14,7 @@ reef-pi website is built using [hugo](https://gohugo.io/) and [github pages](htt
 git clone https://github.com/reef-pi/website
 ```
 
-- Clone hug-sustain theme
+- Clone hugo-sustain theme
 
 ```
 cd website
