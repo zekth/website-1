@@ -26,3 +26,6 @@ A temperature controller
 
 ### Configuration
 
+### Resources
+
+- Adafruit [tutorial](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-11-ds18b20-temperature-sensing?view=all)
