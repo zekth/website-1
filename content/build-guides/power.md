@@ -1,7 +1,5 @@
 ---
-author: "Ranjib Dey"
-date: 2017-07-21
-linktitle: Power controller build
+linktitle: power
 title: How to build a power controller
 highlight: true
 weight: 1
@@ -36,7 +34,7 @@ Automated power strips allow on-demand and timer based control of AC outlets (11
 
 ### Install & Configure reef-pi
 
-Follow reef-pi installation [guide](http://reef-pi.com/general-guides/07_install) to setup reef-pi on Raspberry Pi zero.
+Follow reef-pi installation [guide](http://reef-pi.com/general-guides/install) to setup reef-pi on Raspberry Pi zero.
 
 - Declare outlets and equipments
 
@@ -87,4 +85,4 @@ And another job to stop the heater every morning 6 AM.
 
 ![timer start](/img/power_strip/timer_stop.png)
 
-reef-pi uses cron style specification for denoting time schedule, this allows much more elaborate way of specifying schedules, check the [timer]() guide for details.
+reef-pi uses cron style specification for denoting time schedule, this allows much more elaborate way of specifying schedules, check the [timer](http://reef-pi.com/build-guides/timer) guide for details.

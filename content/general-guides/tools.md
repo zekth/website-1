@@ -4,7 +4,7 @@ date: 2017-07-21
 linktitle: Tools
 title: What tools you need?
 highlight: true
-weight: 1
+weight: 7
 ---
 
 ### reef-pi installation and configuration

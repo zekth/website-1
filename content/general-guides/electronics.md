@@ -1,10 +1,8 @@
 ---
-author: "Ranjib Dey"
-date: 2017-07-21
 linktitle: Electronics
-title: What electronics you need?
+title: An overview of different reef-pi electronics components
 highlight: true
-weight: 2
+weight: 8
 ---
 
 
