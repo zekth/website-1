@@ -4,7 +4,7 @@ date: 2017-07-21
 linktitle: Electronics
 title: What electronics you need?
 highlight: true
-weight: 2
+weight: 8
 ---
 
 
