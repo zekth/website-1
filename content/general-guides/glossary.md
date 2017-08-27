@@ -7,7 +7,6 @@ highlight: true
 weight: 5
 ---
 
-Previous information included below
 
 #### 0-10v
 
@@ -157,15 +156,15 @@ Shells are normally interactive, but if you use command one by one, then you can
 
 A component used in the ATO Controller build.
 
-####ULN2803a
+#### ULN2803a
 
 A DC motor driver component used in the ???? Return Pump???? Controller build.
 
-####Universal Power Cord: NEMA5
+#### Universal Power Cord: NEMA5
 
 The power cord component that connects to the Power Socket with fuse and is used in the Power Controller build and possibly others.
 
-####USB to TTL Cable
+#### USB to TTL Cable
 
 A cable used to connnect the Raspberry Pi to a computer or monitor. There are different versions; ensure you get the right version for you computer or monitor.  Other software may be required.
 
