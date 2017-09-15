@@ -5,6 +5,12 @@ linktitle: Housing
 title: How to build a housing
 highlight: true
 weight: 6
+keywords:
+- reef-pi
+- reef tank
+- controller
+- raspberry pi
+- coral
 ---
 
 Building an appropriate housing is critical part of a controller build. Housing or enclosure secures the elctronics from outside environment, as well as provides mounting place for the different probes, equipments and display panels.
