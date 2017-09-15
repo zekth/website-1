@@ -2,8 +2,9 @@
 author: "Ranjib Dey"
 date: 2017-07-25
 linktitle: Installation
-title: How to install reef-pi on Raspberry Pi
+title: Install & configuration
 highlight: true
+description: Installation and configuration of reef-pi controller
 weight: 1
 ---
 
