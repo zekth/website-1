@@ -5,6 +5,17 @@ linktitle: api
 title: Application Programmers Interface
 highlight: true
 weight: 5
+keywords:
+- reef-pi
+- reef tank
+- controller
+- raspberry pi
+- coral
+- reef-pi
+- reef tank
+- controller
+- raspberry pi
+- coral
 ---
 
 ### Operating system

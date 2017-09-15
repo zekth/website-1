@@ -5,6 +5,13 @@ linktitle: Temperature controller build
 title: How to build a temperature controller
 highlight: true
 weight: 4
+keywords:
+- reef-pi
+- reef tank
+- controller
+- raspberry pi
+- coral
+- temperature controller
 ---
 
 A temperature controller

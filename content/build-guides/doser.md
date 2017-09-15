@@ -3,6 +3,12 @@ linktitle: doser
 title: Dosing controller
 highlight: true
 weight: 5
+keywords:
+- reef-pi
+- reef tank
+- controller
+- raspberry pi
+- iot
 ---
 
 The guide provides details on how to build a two part dosing system. Though we are covering only two pparts dosing system where each part if controlled by one dosing pump, this guide can be used to build dosing controller to automate as many as 16 dosing pumps.

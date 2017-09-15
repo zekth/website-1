@@ -3,6 +3,13 @@ linktitle: power
 title: How to build a power controller
 highlight: true
 weight: 1
+keywords:
+- reef-pi
+- reef tank
+- controller
+- raspberry pi
+- iot
+- relay
 ---
 
 Automated power strips allow on-demand and timer based control of AC outlets (110v or 220v). They are one of the easiest to build yet most useful controllers using reef-pi. For example: a power controller can turn on/off light or skimmer daily as well as allow on-deman controls like switching off ATO and return pump during water changes. This guide will go through step by step process of building a four outlet power controller.

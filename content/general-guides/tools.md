@@ -5,6 +5,12 @@ linktitle: Tools
 title: What tools you need?
 highlight: true
 weight: 7
+keywords:
+- reef-pi
+- reef tank
+- controller
+- raspberry pi
+- coral
 ---
 
 ### reef-pi installation and configuration
