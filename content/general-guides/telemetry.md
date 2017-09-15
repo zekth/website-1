@@ -5,6 +5,7 @@ linktitle: Enabling telemetry
 title: How to setup telemetry and dashboatd with reef-pi
 highlight: true
 weight: 2
+keywords:
 - reef-pi
 - reef tank
 - controller
