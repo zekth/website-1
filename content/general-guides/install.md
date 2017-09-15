@@ -14,6 +14,13 @@ This guide will walk you throug the process of installing and configuring reef-p
 We recommend a microSD card of Class10 and atleast 8Gb capacity for reef-pi. reef-pi is tested on raspbian, but it should work on most other linux OS, on Raspberry Pi. Follow the official raspberry pi guide for details instructions:
 - [Download and write raspbian image to micro SD card](https://www.raspberrypi.org/documentation/installation/installing-images/)
 
+### Connecting to Raspberry Pi
+
+#### Console access using USB TTL cable
+
+[ Adafruit tutorial](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable?view=all)
+
+
 ### Configure raspberry pi
 
 Oncei raspbian image is written on microSD card, plug it in Raspberry Pi and power it. Once started configure following things at leat, for optimal performance of reef-pi.
