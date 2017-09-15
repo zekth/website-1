@@ -2,8 +2,9 @@
 author: "Ranjib Dey"
 date: 2017-07-25
 linktitle: Installation
-title: How to install reef-pi on Raspberry Pi
+title: Install & configuration
 highlight: true
+description: Installation and configuration of reef-pi controller
 weight: 1
 keywords:
 - reef-pi
@@ -20,9 +21,17 @@ This guide will walk you throug the process of installing and configuring reef-p
 We recommend a microSD card of Class10 and atleast 8Gb capacity for reef-pi. reef-pi is tested on raspbian, but it should work on most other linux OS, on Raspberry Pi. Follow the official raspberry pi guide for details instructions:
 - [Download and write raspbian image to micro SD card](https://www.raspberrypi.org/documentation/installation/installing-images/)
 
+### Connecting to Raspberry Pi
+
+You can either use console cable of and HDMI based display (monitor or TV) to access raspberry pi.
+
+For console access setup follow [this adafruit tutorial](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable?view=all). HDMI based access is fairly easy, just hook up any HDMI enabled display (monitor or TV) to raspberry pi using an HDMI cable.
+
+
+
 ### Configure raspberry pi
 
-Oncei raspbian image is written on microSD card, plug it in Raspberry Pi and power it. Once started configure following things at leat, for optimal performance of reef-pi.
+Once raspbian image is written on microSD card, plug it in Raspberry Pi and power it. Once started configure following things at leat, for optimal performance of reef-pi.
 
 - Configure wifi: Enabling wifi or ethernet based internet connection allows reef-pi to be accessible from any web browser (mobile, tablet or computers). Note, this is not a manadatory requirement for running wifi. It is just a convenience.
 
@@ -48,7 +57,13 @@ enable_uart=1
 dtoverlay=w1-gpio
 ```
 
+- Click the Raspberry Pi icon in the upper left.
+- Go to Preferences>Raspberry Pi Configuration
+- On the Interfaces tab enable the necessary items (time, localization etc)
+
 - Configure and enable ssh: ssh is used to remotely control and troubleshoot the Raspberry Pi directly.
+
+- The same can be done from terminal as well, using following commands:
 
 ```
 sudo systemctl start ssh.service
@@ -70,22 +85,19 @@ sudo reboot
 
 ### Install reef-pi
 
-- Download latest reef-pi release
-- Install reef-pi
+- On the raspberry pi, navigate to and download the latest [release](https://github.com/reef-pi/reef-pi/releases)
+- Copy the .deb out of the downloads folder to your desired location (generally in Documents folder).
+- Open Terminal and type following commands to install reef-pi
 
 ```
-dpkg -i reef-pi-<version>.deb
+sudo dpkg -i reef-pi-<version>.deb
 ```
+
 - Check reef-pi is running
 
 ```
-systemctl status reef-pi.service
+sudo systemctl status reef-pi.service
 ```
 
-### Configure reef-pi
 
-- Enable accessing UI from other devices
-
-```yaml
-address: 0.0.0.0:8080
-```
+After this you should be able to access reef-pi from the browser
