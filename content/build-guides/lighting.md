@@ -3,6 +3,12 @@ linktitle: lighting
 title: LED Lighting
 highlight: true
 weight: 3
+keywords:
+- reef-pi
+- reef tank
+- controller
+- raspberry pi
+- iot
 ---
 
 ### Things you need

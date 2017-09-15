@@ -3,6 +3,12 @@ linktitle: Electronics
 title: An overview of different reef-pi electronics components
 highlight: true
 weight: 8
+keywords:
+- reef-pi
+- reef tank
+- controller
+- raspberry pi
+- coral
 ---
 
 

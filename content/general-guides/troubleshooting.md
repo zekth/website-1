@@ -5,6 +5,12 @@ linktitle: Troubleshooting
 title: How to troubleshoot and ask for help
 highlight: true
 weight: 4
+keywords:
+- reef-pi
+- reef tank
+- controller
+- raspberry pi
+- coral
 ---
 
 - Check if reef-pi is running

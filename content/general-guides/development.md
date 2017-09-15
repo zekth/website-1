@@ -5,6 +5,12 @@ linktitle: Development environment guide
 title: How to setup reef-pi development environment
 highlight: true
 weight: 5
+keywords:
+- reef-pi
+- reef tank
+- controller
+- raspberry pi
+- coral
 ---
 
 reef-pi is written in [go](https://golang.org/) and [react](https://facebook.github.io/react/). This guide will walk through the steps involved in

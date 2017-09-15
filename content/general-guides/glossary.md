@@ -5,6 +5,12 @@ linktitle: glossary
 title: Glossary
 highlight: true
 weight: 5
+keywords:
+- reef-pi
+- reef tank
+- controller
+- raspberry pi
+- coral
 ---
 
 

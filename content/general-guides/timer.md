@@ -3,6 +3,12 @@ linktitle: Timer syntax
 title: Timer specification
 highlight: true
 weight: 9
+keywords:
+- reef-pi
+- reef tank
+- controller
+- raspberry pi
+- coral
 ---
 
 Each job in reef-pi is executed at a given schedule. A job's schedule specifies day and time related details.

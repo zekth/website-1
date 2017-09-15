@@ -5,6 +5,12 @@ linktitle: Adding touchscreen display
 title: How to setup a touchscreen display
 highlight: true
 weight: 6
+keywords:
+- reef-pi
+- reef tank
+- controller
+- raspberry pi
+- coral
 ---
 
 reef-pi can be configured to be used with the offical Raspberry Pi Touchscreen display. This can be used to directly siwtch on/off equipments, control light intensity and a general purpose dashboard of controller health.

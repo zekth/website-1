@@ -3,6 +3,12 @@ linktitle: ato
 title: Auto Top Off (ATO)
 highlight: true
 weight: 2
+keywords:
+- reef-pi
+- reef tank
+- controller
+- raspberry pi
+- iot
 ---
 
 ### Things you need
