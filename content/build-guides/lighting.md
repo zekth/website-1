@@ -11,23 +11,80 @@ keywords:
 - iot
 ---
 
-### Things you need
+Lighting is one of the key aspects of a maintaining a thriving reef tank. Most corals in reef tanks are photo synthetic and requires lighting from a specific spectrum (400-700 nm). Different corals prefer different intensity of lighting for their optimal growth, these are geneally specified in PAR (photosynthetically active radiation) values. For example, acroporas prefer higher PARs (250 and above) while acans and mushrooms prefers lower PARs (less than 150).
 
-- Raspberry Pi. Both Pi zero or Pi 3 will work
-- PCA9685 breakout board
-- 2 PN2222 transistors
-- 2 10k resistors, 2 1K resistors
-- 3.5mm female, panel mount audio jack
-- 3.5mm Right angle, bare wire male audio connector
-- 5 volt 2.5 amp micro usb power supply  for raspberry pi
-- 10v DC power adapter
-- Jumper wires
+In a typical reef tank lights are used to simulate diurnal cycle, which is also referred as sunrise to sunset effect. As part of this, lights are turned on at specific time followed by gradually increasing intensity to attain a peak, then gradually decreasing the intensity to finally switch off to simulate a 10 to 12 hour total lighting period.
+
+Other than performing the diurnal cycle lighting intensity is also controlled while introducing new corals in the tank to ease the acclamation process. Corals acclamate easily in new tank with low lights, so light intensity is brought down when new corals are added and then gradually adjusted to the normal diurnal settings over a period of few days.
+
+
+reef-pi allows automation of T5 and metal halides using [equipments and timers](/power/), to gradually switch on/off multiple T5/metal halides, since they do not offer intensity control.
+
+This build guide specifically cover LED automation which allows intensity control, to simulate diurnal cycle or perform on-demand controls (for things like photography). Given there are a wide variety of LED lights avilable, we'll only cover one of the most popular LED light, i.e Kessil. Though this guide walks through building a kessil controller, reef-pi can easily control most of the popular LEDs with minimal changes in the electronics side, and without any software changes.
+
+### How this works ?
+
+reef-pi uses runs on Raspberry Pi and uses a separate breakout board (PCA9685) to generate 5 volt [PWM](https://en.wikipedia.org/wiki/Pulse-width_modulation). It is this PWM output that is used to simulate variable voltage, which in turn controls intensity of LED lights.
+
+Kessil lights expect 10 volt control signals instead of 5 volt signal, an [NPN transistor](https://en.wikipedia.org/wiki/Bipolar_junction_transistor#NPN) is used to convert 5 volt signal coming out of PCA9685 board to 10 volt signal, provided by a 12 volt power adapter. A 1K and a 10K resistor is used to safegurd the signal. The resistor values does not need to be 1k and 10k, they can be anything as long as the resistor connected to pca9685 signal is higher than the resistor connected to 12v power adapter. Since kessil lights have two control channels two set of transistor and resistor setup. Finally, we connect the two 10 volt pwm signals along with a ground connection to a female audio jack, since kessil lights uses audio jacks to supply control signal.
+
+#### Things to consider
+
+- Because this guide covers kessil light controller which has separate power and control signal inputs we use this specific transistor and resistor setup. The same logic can be used to generate almost any type of control signals using different transistor or power mosfets. You have to just choose a transistor or mosfet that can operate at logic level (i.e. 5 volt) and withstand the expected output current.
+
+- Though we are using only two channels for this guide, it should be noted that the PCA9685 board can generate up to 16 channels. Which means we can control as many as 16 channels using this board. Unlike kessil, some of the LED lights provide more than two channels for control, having additional channels can help there. It is also possible to use additional channels to control more than one light independently or even control DC pumps (wave makers or dosing systems).
+
+- Some of the LED lights expect analog control signal instead of PWM. In such cases a simple low pass filter circuit made of only resistors and capacitors can be used to convert the pwm signal coming out of PCA9685 to analog signal. [This artical](https://provideyourown.com/2011/analogwrite-convert-pwm-to-voltage/) provides guidance around such cicuit.
+
+
+
+### Bill of materials
+
+- [Pi zero](https://www.adafruit.com/product/3400) or [Pi 3](https://www.adafruit.com/product/3055)
+- [micro sd card](https://www.adafruit.com/product/2693)
+- 5v 2.4 amp [adapter](https://www.adafruit.com/product/1995) for Raspberry Pi
+- [PCA9685 breakout board](https://www.adafruit.com/product/815)
+- Two [PN2222 transistors](https://www.adafruit.com/product/756)
+- Two [10k resistors](https://www.adafruit.com/product/2784)
+- Two [1K of 2.2K resistors](https://www.adafruit.com/product/2782)
+- [3.5mm female, panel mount audio jack](https://www.amazon.com/dp/B013AP77T8)
+- [3.5mm male audio jack](https://www.amazon.com/dp/B00MFRZ2SG/)
+- [12v DC power adapter](https://www.amazon.com/dp/B01ICSD93Q/)
+- [Jumper wires](https://www.amazon.com/dp/B00DJY4RS0)
 
 ### Wiring
 
-### Configuring reef-pi
+![breadboard](/img/light/breadboard.png)
 
-- Enable and configure led channels reef-pi configuration file
-- Restart reef-pi
 
-### Setting up 24 hour lighting cycle
+### Install & Configure reef-pi
+
+- Follow reef-pi installation [guide](../../general-guides/install) to setup reef-pi on Raspberry Pi zero.
+
+- Once reef-pi is installed and running go to systems page, enable lighting capability and reload reef-pi
+
+![breadboard](/img/light/setup_1.png)
+
+- PWM outputs such as the ones that used for light controls are called as *jacks* in reef-pi. A jack can have multiple channels. Each channel represented by the controlling pin number of PCA9685 board. For kessil controller, we will be declaring a jack name *J1* with two pins, each pin number separated by comma, under system tab
+
+![breadboard](/img/light/setup_2.png)
+
+- Once jack is declared we can head to lighting tab and declare lights. We'll use an example [A80](http://www.kessil.com/aquarium/Saltwater_A80_Tuna_Blue.php) kessil light, and assign the J1 jack to it.
+
+- reef-pi will now show corresponding control settings under the A80 light. Select the inverse checkbox to indicate that our actual generated control signal should be inverse of our specified values, this is a side effect of using NPN transistor which opetates in [sinking current](https://electronics.stackexchange.com/questions/74636/sinking-and-sourcing-current) mode.
+
+![breadboard](/img/light/setup_3.png)
+
+### Usage
+
+#### Making on-demand changes
+
+reef-pi will show a single slider for each channels defined in a light. This can be used to control the signal of that channel. Users can use the slider to set a specific value and then hit the update button to see the effect. In this mode user directly control the value of the output signal
+
+![breadboard](/img/light/setup_4.png)
+
+#### Setting up 24 hour light cycle
+
+Alternatively, users can also choose automatic mode, by seleting the *auto* checkbox, which will render 12 vertical sliders each representing expected control signal values at 2 hour intervals, thus providing the user with 24 hour automatic controls. Specified the expected diurnal cycle values and hit update button, and reef-pi will automatically compute the right values for current time and apply it.
+
+![breadboard](/img/light/setup_5.png)
