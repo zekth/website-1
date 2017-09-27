@@ -27,8 +27,8 @@ Automated power strips allow on-demand and timer based control of AC outlets (11
 
 - [Pi zero](https://www.adafruit.com/product/3400)
 - [micro sd card](https://www.adafruit.com/product/2693)
-- 4 Channel SSD relay. [example](https://www.amazon.com/gp/product/B00ZZVQR5Q/)
 - 5v 2.4 amp [adapter](https://www.adafruit.com/product/1995) for Raspberry Pi
+- 4 Channel SSD relay. [example](https://www.amazon.com/gp/product/B00ZZVQR5Q/)
 - AC Power adapter with fuse. [example](https://www.amazon.com/gp/product/B00ME5YAPK)
 - AC Power cord. [example](https://www.amazon.com/gp/product/B00005113L/)
 - AC receptacles [example](https://www.amazon.com/gp/product/B002DQT5UK/)
