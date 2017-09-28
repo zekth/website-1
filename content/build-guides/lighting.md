@@ -1,5 +1,7 @@
 ---
 linktitle: lighting
+author: "Ranjib Dey"
+date: 2017-09-25
 title: LED Lighting
 highlight: true
 weight: 3
@@ -24,11 +26,11 @@ This build guide specifically cover LED automation which allows intensity contro
 
 ### How this works ?
 
-reef-pi uses runs on Raspberry Pi and uses a separate breakout board (PCA9685) to generate 5 volt [PWM](https://en.wikipedia.org/wiki/Pulse-width_modulation). It is this PWM output that is used to simulate variable voltage, which in turn controls intensity of LED lights.
+reef-pi runs on Raspberry Pi and uses a separate breakout board (PCA9685) to generate 5 volt [PWM](https://en.wikipedia.org/wiki/Pulse-width_modulation). It is this PWM output that is used to simulate variable voltage, which in turn controls intensity of LED lights.
 
 Kessil lights expect 10 volt control signals instead of 5 volt signal, an [NPN transistor](https://en.wikipedia.org/wiki/Bipolar_junction_transistor#NPN) is used to convert 5 volt signal coming out of PCA9685 board to 10 volt signal, provided by a 12 volt power adapter. A 1K and a 10K resistor is used to safegurd the signal. The resistor values does not need to be 1k and 10k, they can be anything as long as the resistor connected to pca9685 signal is higher than the resistor connected to 12v power adapter. Since kessil lights have two control channels two set of transistor and resistor setup. Finally, we connect the two 10 volt pwm signals along with a ground connection to a female audio jack, since kessil lights uses audio jacks to supply control signal.
 
-#### Things to consider
+### Things to consider
 
 - Because this guide covers kessil light controller which has separate power and control signal inputs we use this specific transistor and resistor setup. The same logic can be used to generate almost any type of control signals using different transistor or power mosfets. You have to just choose a transistor or mosfet that can operate at logic level (i.e. 5 volt) and withstand the expected output current.
 
@@ -57,7 +59,7 @@ Kessil lights expect 10 volt control signals instead of 5 volt signal, an [NPN t
 ![breadboard](/img/light/breadboard.png)
 
 
-### Install & Configure reef-pi
+### Installation & Configuration
 
 - Follow reef-pi installation [guide](../../general-guides/install) to setup reef-pi on Raspberry Pi zero.
 
