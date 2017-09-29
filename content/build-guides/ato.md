@@ -1,6 +1,6 @@
 ---
 linktitle: ato
-title: Auto Top Off (ATO)
+title: Auto Top Off
 highlight: true
 weight: 2
 keywords:
@@ -9,25 +9,48 @@ keywords:
 - controller
 - raspberry pi
 - iot
+- ato
+- auto top off
+- auto top up
+- coral
 ---
 
-### Things you need
+Atutomatic top off units are systems that maintains a constant water volume inside a reef tank. Reef tanks undergoes water evaporation which results in loss of water volume, which in turn increases the salinity of remaining water. Corals are highly sensitive to salinity thus unless the evaporated water is supplemented with fresh RO/DI water it will have a detrimental effect to corals. Auto top off units monitors water level periodically and when it falls below a certain level, they switch on an ATO pump to replenish the lost water volume with fresh RO/DI water, till it reaches the expected volume. The degree of water evaporation is dependent on several factors like ambient temperature,  whether the tank has open top of closed lid, if fan is used to cool down tanks etc. The effect of water loss due to evaporation is dependant on tank size. Our communal understanding is smaller tanks such as nano and pico reefs,  require ATO more than bigger tanks. A stable water height is also important for optimal skimmers performance.
 
-- Raspberry Pi. Both Pi zero or Pi 3 will work
-- Single channel relay
-- Photo electric water level sensor
-- 3.5mm female, panel mount audio jack
-- Jumper wires
-- 3.5mm Right angle, bare wire male audio connector
-- 5 volt 2.5 amp micro usb power supply  for raspberry pi
-- Submercible water pump
-- Unviersal powe chord
-- Power socket with fuse
-- AC receptacles
+This build guide will cover how to build an inexpensive yet effective auto top off unit using reef-pi.
+
+### How this works ?
+
+### Things to consider
+
+- photo electric sensor or float switch
+
+- ATO pump
+
+
+### Bill of materials
+
+- [Pi zero](https://www.adafruit.com/product/3400) or [Pi 3](https://www.adafruit.com/product/3055)
+- [micro sd card](https://www.adafruit.com/product/2693)
+- 5v 2.4 amp [power adapter](https://www.adafruit.com/product/1995) for Raspberry Pi
+- Relay, with at least 1 channel [example](https://www.amazon.com/dp/B00E0NTPP4)
+- [Photo electric liquid level sensor](https://www.amazon.com/dp/B074T9WHGF/)
+- [Submercible water pump](https://www.amazon.com/dp/B073VSZH2P/)
+- [12v DC power adapter](https://www.amazon.com/dp/B01ICSD93Q/) for ATO pump
+- AC receptacles [example](https://www.amazon.com/gp/product/B002DQT5UK/)
+- [3.5mm female, panel mount audio jack](https://www.amazon.com/dp/B013AP77T8)
+- [3.5mm male audio jack](https://www.amazon.com/dp/B00MFRZ2SG/)
+- [Jumper wires](https://www.amazon.com/dp/B00DJY4RS0)
 
 ### Wiring
 
-### Configuring reef-pi
+![breadboard](/img/ato/breadboard.png)
 
-- Enable and configure ATO  in reef-pi configuration file
-- Restart reef-pi
+### Installation & Configuration
+
+- Follow reef-pi installation [guide](../../general-guides/install) to setup reef-pi on Raspberry Pi zero.
+
+
+### Resources
+
+[dfrobot's wiki](https://www.dfrobot.com/wiki/index.php/Liquid_Level_Sensor-FS-IR02_SKU:_SEN0205)

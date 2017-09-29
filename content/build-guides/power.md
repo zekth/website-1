@@ -1,6 +1,6 @@
 ---
 linktitle: power
-title: How to build a power controller
+title: Power controller
 highlight: true
 weight: 1
 keywords:

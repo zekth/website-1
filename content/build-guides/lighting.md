@@ -1,6 +1,8 @@
 ---
 linktitle: lighting
-title: LED Lighting
+author: "Ranjib Dey"
+date: 2017-09-25
+title: Lighting controller
 highlight: true
 weight: 3
 keywords:
@@ -9,6 +11,8 @@ keywords:
 - controller
 - raspberry pi
 - iot
+- lighting controller
+- kessil
 ---
 
 Lighting is one of the key aspects of a maintaining a thriving reef tank. Most corals in reef tanks are photo synthetic and requires lighting from a specific spectrum (400-700 nm). Different corals prefer different intensity of lighting for their optimal growth, these are geneally specified in PAR (photosynthetically active radiation) values. For example, acroporas prefer higher PARs (250 and above) while acans and mushrooms prefers lower PARs (less than 150).
@@ -24,18 +28,17 @@ This build guide specifically cover LED automation which allows intensity contro
 
 ### How this works ?
 
-reef-pi uses runs on Raspberry Pi and uses a separate breakout board (PCA9685) to generate 5 volt [PWM](https://en.wikipedia.org/wiki/Pulse-width_modulation). It is this PWM output that is used to simulate variable voltage, which in turn controls intensity of LED lights.
+reef-pi runs on Raspberry Pi and uses a separate breakout board (PCA9685) to generate 5 volt [PWM](https://en.wikipedia.org/wiki/Pulse-width_modulation). It is this PWM output that is used to simulate variable voltage, which in turn controls intensity of LED lights.
 
 Kessil lights expect 10 volt control signals instead of 5 volt signal, an [NPN transistor](https://en.wikipedia.org/wiki/Bipolar_junction_transistor#NPN) is used to convert 5 volt signal coming out of PCA9685 board to 10 volt signal, provided by a 12 volt power adapter. A 1K and a 10K resistor is used to safegurd the signal. The resistor values does not need to be 1k and 10k, they can be anything as long as the resistor connected to pca9685 signal is higher than the resistor connected to 12v power adapter. Since kessil lights have two control channels two set of transistor and resistor setup. Finally, we connect the two 10 volt pwm signals along with a ground connection to a female audio jack, since kessil lights uses audio jacks to supply control signal.
 
-#### Things to consider
+### Things to consider
 
 - Because this guide covers kessil light controller which has separate power and control signal inputs we use this specific transistor and resistor setup. The same logic can be used to generate almost any type of control signals using different transistor or power mosfets. You have to just choose a transistor or mosfet that can operate at logic level (i.e. 5 volt) and withstand the expected output current.
 
 - Though we are using only two channels for this guide, it should be noted that the PCA9685 board can generate up to 16 channels. Which means we can control as many as 16 channels using this board. Unlike kessil, some of the LED lights provide more than two channels for control, having additional channels can help there. It is also possible to use additional channels to control more than one light independently or even control DC pumps (wave makers or dosing systems).
 
-- Some of the LED lights expect analog control signal instead of PWM. In such cases a simple low pass filter circuit made of only resistors and capacitors can be used to convert the pwm signal coming out of PCA9685 to analog signal. [This artical](https://provideyourown.com/2011/analogwrite-convert-pwm-to-voltage/) provides guidance around such cicuit.
-
+- Some of the LED lights expect analog control signal instead of PWM. In such cases a simple low pass filter circuit made of only resistors and capacitors can be used to convert the pwm signal coming out of PCA9685 to analog signal. [This article](https://provideyourown.com/2011/analogwrite-convert-pwm-to-voltage/) provides guidance around such cicuit.
 
 
 ### Bill of materials
@@ -46,7 +49,7 @@ Kessil lights expect 10 volt control signals instead of 5 volt signal, an [NPN t
 - [PCA9685 breakout board](https://www.adafruit.com/product/815)
 - Two [PN2222 transistors](https://www.adafruit.com/product/756)
 - Two [10k resistors](https://www.adafruit.com/product/2784)
-- Two [1K of 2.2K resistors](https://www.adafruit.com/product/2782)
+- Two [1K or 2.2K resistors](https://www.adafruit.com/product/2782)
 - [3.5mm female, panel mount audio jack](https://www.amazon.com/dp/B013AP77T8)
 - [3.5mm male audio jack](https://www.amazon.com/dp/B00MFRZ2SG/)
 - [12v DC power adapter](https://www.amazon.com/dp/B01ICSD93Q/)
@@ -57,23 +60,23 @@ Kessil lights expect 10 volt control signals instead of 5 volt signal, an [NPN t
 ![breadboard](/img/light/breadboard.png)
 
 
-### Install & Configure reef-pi
+### Installation & Configuration
 
 - Follow reef-pi installation [guide](../../general-guides/install) to setup reef-pi on Raspberry Pi zero.
 
 - Once reef-pi is installed and running go to systems page, enable lighting capability and reload reef-pi
 
-![breadboard](/img/light/setup_1.png)
+![systems](/img/light/setup_1.png)
 
 - PWM outputs such as the ones that used for light controls are called as *jacks* in reef-pi. A jack can have multiple channels. Each channel represented by the controlling pin number of PCA9685 board. For kessil controller, we will be declaring a jack name *J1* with two pins, each pin number separated by comma, under system tab
 
-![breadboard](/img/light/setup_2.png)
+![jacks](/img/light/setup_2.png)
 
 - Once jack is declared we can head to lighting tab and declare lights. We'll use an example [A80](http://www.kessil.com/aquarium/Saltwater_A80_Tuna_Blue.php) kessil light, and assign the J1 jack to it.
 
 - reef-pi will now show corresponding control settings under the A80 light. Select the inverse checkbox to indicate that our actual generated control signal should be inverse of our specified values, this is a side effect of using NPN transistor which opetates in [sinking current](https://electronics.stackexchange.com/questions/74636/sinking-and-sourcing-current) mode.
 
-![breadboard](/img/light/setup_3.png)
+![light](/img/light/setup_3.png)
 
 ### Usage
 
@@ -81,10 +84,10 @@ Kessil lights expect 10 volt control signals instead of 5 volt signal, an [NPN t
 
 reef-pi will show a single slider for each channels defined in a light. This can be used to control the signal of that channel. Users can use the slider to set a specific value and then hit the update button to see the effect. In this mode user directly control the value of the output signal
 
-![breadboard](/img/light/setup_4.png)
+![manual](/img/light/setup_4.png)
 
 #### Setting up 24 hour light cycle
 
 Alternatively, users can also choose automatic mode, by seleting the *auto* checkbox, which will render 12 vertical sliders each representing expected control signal values at 2 hour intervals, thus providing the user with 24 hour automatic controls. Specified the expected diurnal cycle values and hit update button, and reef-pi will automatically compute the right values for current time and apply it.
 
-![breadboard](/img/light/setup_5.png)
+![auto](/img/light/setup_5.png)
