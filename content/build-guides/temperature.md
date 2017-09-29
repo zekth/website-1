@@ -52,6 +52,11 @@ In this guide we'll be using reef-pi to build a temperature controller that will
 
 - Connect DS18B20
 
+- Enable temperature capability under system tab
+
+- Enabling temperature monitoring 
+
+- Enabling temperature control
 
 ### Resources
 

@@ -19,7 +19,7 @@ Atutomatic top off units are systems that maintains a constant water volume insi
 
 This build guide will cover how to build an inexpensive yet effective auto top off unit using reef-pi.
 
-### How it works ?
+### How this works ?
 
 ### Things to consider
 
@@ -34,8 +34,9 @@ This build guide will cover how to build an inexpensive yet effective auto top o
 - [micro sd card](https://www.adafruit.com/product/2693)
 - 5v 2.4 amp [power adapter](https://www.adafruit.com/product/1995) for Raspberry Pi
 - Relay, with at least 1 channel [example](https://www.amazon.com/dp/B00E0NTPP4)
-- Photo electric water level sensor
-- Submercible water pump
+- [Photo electric liquid level sensor](https://www.amazon.com/dp/B074T9WHGF/)
+- [Submercible water pump](https://www.amazon.com/dp/B073VSZH2P/)
+- [12v DC power adapter](https://www.amazon.com/dp/B01ICSD93Q/) for ATO pump
 - AC receptacles [example](https://www.amazon.com/gp/product/B002DQT5UK/)
 - [3.5mm female, panel mount audio jack](https://www.amazon.com/dp/B013AP77T8)
 - [3.5mm male audio jack](https://www.amazon.com/dp/B00MFRZ2SG/)
@@ -51,3 +52,5 @@ This build guide will cover how to build an inexpensive yet effective auto top o
 
 
 ### Resources
+
+[dfrobot's wiki](https://www.dfrobot.com/wiki/index.php/Liquid_Level_Sensor-FS-IR02_SKU:_SEN0205)
