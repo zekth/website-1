@@ -1,13 +1,13 @@
 baseURL = "https://reef-pi.github.io/"
 languageCode = "en-us"
-title = "reef-pi - A Rasoberry Pi based opensource reef tank controller"
+title = "reef-pi - A Raspberry Pi based opensource reef tank controller"
 theme = "hugo-sustain"
 publishDir = "../reef-pi.github.io"
 googleAnalytics = "UA-102968086-1"
 
 [params]
 Author = "Ranjib Dey"
-Description = "reef-pi - A Rasoberry Pi based opensource reef tank controller"
+Description = "reef-pi - A Raspberry Pi based opensource reef tank controller"
 
 [params.social]
   Github    = "reef-pi"
