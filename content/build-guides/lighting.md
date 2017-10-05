@@ -91,3 +91,8 @@ reef-pi will show a single slider for each channels defined in a light. This can
 Alternatively, users can also choose automatic mode, by seleting the *auto* checkbox, which will render 12 vertical sliders each representing expected control signal values at 2 hour intervals, thus providing the user with 24 hour automatic controls. Specified the expected diurnal cycle values and hit update button, and reef-pi will automatically compute the right values for current time and apply it.
 
 ![auto](/img/light/setup_5.png)
+
+### Resources
+
+- Adafruit [tutorial](https://learn.adafruit.com/adafruit-16-channel-servo-driver-with-raspberry-pi?view=all) on PCA9685 board and Raspberry Pi.
+- [Fritzing project file](https://github.com/reef-pi/DesignFiles/raw/master/PowerStrip.fzz)

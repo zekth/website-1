@@ -60,4 +60,5 @@ In this guide we'll be using reef-pi to build a temperature controller that will
 
 ### Resources
 
-- Adafruit [tutorial](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-11-ds18b20-temperature-sensing?view=all)
+- Adafruit [tutorial](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-11-ds18b20-temperature-sensing?view=all) on ds18b20 probe and Raspberry pi
+- [Fritzing project file](https://github.com/reef-pi/DesignFiles/raw/master/temperature.fzz)
