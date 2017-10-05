@@ -13,11 +13,13 @@ keywords:
 - iot
 ---
 
-The camera controller provides an easy and convenient way to take reef tank photos on demand and at periodic intervals. reef-pi can also be configured to upload the images taken to google drive. This is useful when users are far from the tank for longer periods (like in vacataion), the uploaded images can provides an easy way to stay up to date with current state of the tank. The camera controller does not involve any other electronics other than the official camera module.
+The camera controller provides easy and convenient way to take reef tank photos on demand and at periodic intervals. reef-pi can also be configured to upload the images taken to google drive. This is useful when users are far from the tank for longer periods (like in vacation), the uploaded images can provide an easy way to stay up to date with current state of the tank. The camera controller does not involve any other electronics other than the official camera module.
+
+### How this work
 
 ### Things to consider
 
-- The camera cable that ships with pi camera is rathet small (6 inches) and likely to be insufficient for most practical usage. Before ordering the bill of materials, consider where the actual raspberry pi controller will be located and where the camera itself will be mounted. Then choose camera flex cable of appropriate length.
+- The camera cable that ships with pi camera is rather small (6 inches) and likely to be insufficient for most practical usage. Before ordering the bill of materials, consider where the actual raspberry pi controller will be located and where the camera itself will be mounted. Then choose camera flex cable of appropriate length.
 
 ### Bill of materials
 

@@ -19,7 +19,7 @@ Maintain stable temperature is a key requirement for a thriving reef tank. Most 
 
 In this guide we'll be using reef-pi to build a temperature controller that will monitor the temperature of reef tank and turn on heater or cooler when the temperature goes above or below a specified range.
 
-### How it works ?
+### How it works
 
 ### Things to consider
 
