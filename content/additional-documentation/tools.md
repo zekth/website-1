@@ -2,9 +2,9 @@
 author: "Ranjib Dey"
 date: 2017-07-21
 linktitle: Tools
-title: What tools you need?
+title: Tools 
 highlight: true
-weight: 7
+weight: 4
 keywords:
 - reef-pi
 - reef tank
@@ -23,13 +23,14 @@ keywords:
 
 ### Wiring and testing electronics
 
-- soldering iron
-- multimeter
+- soldering iron, solder, faux etc.
 - plier
 - wire stripper
+- Screw driver (philips, m8 etc)
+- multimeter
 
 ### Wood working
 
+- Dremel or some other rotary tools
 - Scroll saw
 - Clamps
--

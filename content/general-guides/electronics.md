@@ -1,8 +1,8 @@
 ---
 linktitle: Electronics
-title: An overview of different reef-pi electronics components
+title: reef-pi electronics
 highlight: true
-weight: 8
+weight: 2
 keywords:
 - reef-pi
 - reef tank

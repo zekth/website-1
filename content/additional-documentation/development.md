@@ -1,10 +1,10 @@
 ---
 author: "Ranjib Dey"
 date: 2017-07-20
-linktitle: Development environment guide
-title: How to setup reef-pi development environment
+linktitle: devenvironment
+title: Development environment
 highlight: true
-weight: 5
+weight: 6
 keywords:
 - reef-pi
 - reef tank
@@ -165,6 +165,3 @@ Note, if theres an already installed reef-pi, you have to remove it first. To do
 ```
 sudo apt-get remove -y --purge reef-pi
 ```
-
-If you have any feedback on this guide, drop an email to feedback@reef-pi.com. Happy reefing, happy hacking
-

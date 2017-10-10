@@ -2,9 +2,9 @@
 author: "Ranjib Dey"
 date: 2017-08-24
 linktitle: api
-title: Application Programmers Interface
+title: API
 highlight: true
-weight: 5
+weight: 7
 keywords:
 - reef-pi
 - reef tank
@@ -41,21 +41,37 @@ reef-pi uses a configuration file to boot and control a handful of critical sett
 reef-pi porvides a simple HTTP JSON based interface. Following is a list of currently available endpoints. A note of caution, till reef-pi hits 1.0 release the API is likely to undergo a lot of changes. 1.0 will mark the first major release, which signifies 1.0 API will not have any breaking change (that is consumers will always work on 1.0 based releases, it can have new improvements, but it cant remove anything existing, or change it in a way that impacts users directly) for 1 year.
 
 
-#### API Endpoints
+### Endpoints
+
+#### system 
 
 ##### GET /api/capabilities
-##### GET /api/settings
-##### POST /api/settings
 
-##### GET /api/equipments/{id}
-##### GET /api/equipments
-##### GET /api/equipments
-##### GET /api/equipments
-##### GET /api/equipments
+##### GET /api/settings
+
+##### POST /api/settings
 
 ##### GET /api/outlets
 
-##### GET /api/lights
-
 ##### GET /api/jacks
 
+#### equipments
+
+##### GET /api/equipments/{id}
+
+##### GET /api/equipments
+
+##### GET /api/equipments
+
+##### GET /api/equipments
+
+##### GET /api/equipments
+
+#### timers
+
+#### lights
+
+##### GET /api/lights
+
+
+#### camera

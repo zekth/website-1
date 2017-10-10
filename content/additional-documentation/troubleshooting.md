@@ -2,9 +2,9 @@
 author: "Ranjib Dey"
 date: 2017-07-21
 linktitle: Troubleshooting
-title: How to troubleshoot and ask for help
+title: Troubleshooting
 highlight: true
-weight: 4
+weight: 1
 keywords:
 - reef-pi
 - reef tank
