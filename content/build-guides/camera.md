@@ -4,7 +4,7 @@ author: "Ranjib Dey"
 date: 2017-09-25
 title: Camera controller
 highlight: true
-weight: 3
+weight: 6
 keywords:
 - reef-pi
 - reef tank

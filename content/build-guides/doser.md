@@ -2,7 +2,7 @@
 linktitle: doser
 title: Dosing controller
 highlight: true
-weight: 5
+weight: 7
 keywords:
 - reef-pi
 - reef tank

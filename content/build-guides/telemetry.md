@@ -1,10 +1,10 @@
 ---
 author: "Ranjib Dey"
 date: 2017-07-21
-linktitle: Enabling telemetry
-title: How to setup telemetry and dashboatd with reef-pi
+linktitle: Telemetry
+title: Telemetry
 highlight: true
-weight: 2
+weight: 5
 keywords:
 - reef-pi
 - reef tank
