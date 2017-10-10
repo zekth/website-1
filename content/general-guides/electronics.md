@@ -1,8 +1,8 @@
 ---
-linktitle: Electronics
-title: An overview of different reef-pi electronics components
+linktitle: electronics
+title: Wiring and connectors
 highlight: true
-weight: 8
+weight: 2
 keywords:
 - reef-pi
 - reef tank
@@ -11,18 +11,6 @@ keywords:
 - coral
 ---
 
-
-### Raspberry Pi
-
-### Raspberrt Pi 7" Touchscreen display
-
-### Relays
-
-### PCA9685
-
-### L293D
-
-### ULN2803a
 
 ### Connectors
 
@@ -33,16 +21,8 @@ keywords:
 - 12 volt, 1 amp DC barrel jack power supply
 
 
-### Electrical components
+### Wiring
 
-- Power socket with fuse
-- Universal power cord: NEMA5
-- 110v electrical receptacles
-
-
-### Peristaltic pumps
-
-### PN2222 transistor
-
-### 1K and 10K resistors
-- 
+- Breadbord
+- Perf board
+- DIY IC board

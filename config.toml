@@ -1,13 +1,13 @@
 baseURL = "https://reef-pi.github.io/"
 languageCode = "en-us"
-title = "reef-pi - A Raspberry Pi based opensource reef tank controller"
+title = "reef-pi - An opensource reef tank controller based on Raspberry Pi"
 theme = "hugo-sustain"
 publishDir = "../reef-pi.github.io"
 googleAnalytics = "UA-102968086-1"
 
 [params]
 Author = "Ranjib Dey"
-Description = "reef-pi - A Raspberry Pi based opensource reef tank controller"
+Description = "reef-pi - An opensource reef tank controller based on Raspberry Pi"
 
 [params.social]
   Github    = "reef-pi"
@@ -27,8 +27,14 @@ Description = "reef-pi - A Raspberry Pi based opensource reef tank controller"
   url = "/build-guides/"
 
 [[menu.main]]
+  name = "additional documentation"
+  identifier = "additional documentation"
+  weight = 300
+  url = "/additional-documentation/"
+
+[[menu.main]]
   name = "blogs"
   identifier = "blogs"
-  weight = 300
+  weight = 400
   url = "/blogs/"
 

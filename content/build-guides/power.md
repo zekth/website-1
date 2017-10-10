@@ -87,6 +87,8 @@ Any equipment specified in the configuration file can be switched on or off any 
 
 #### Controlling equipments using timers
 
+Timers in reef-pi allows automation of an action on a equipemnt at a given schedule.
+
 In the following example we are setting up heater to start at night 10:00 PM and stop at morning 6:00 AM. Use the "timers" tab to define two timers. Each timer represents a period action reef-pi takes. 
 
 The first job starts the heater at night. reef-pi allows us to specify which equipment to take action against, time details (day of the month, hour, minute, second etc) and the action (on or off). Notice "\*" is used to denote every day of the month.
@@ -97,7 +99,31 @@ And another job to stop the heater every morning 6 AM.
 
 ![timer start](/img/power/timer_stop.png)
 
-reef-pi uses cron style specification for denoting time schedule, this allows much more elaborate way of specifying schedules, check the [timer](/general-guides/timer) guide for details.
+reef-pi uses cron style specification for denoting time schedule, this allows much more elaborate way of specifying schedules. 
+
+A typical schedule specifies day and time related details for the timer.
+
+reef-pi uses [cron](https://en.wikipedia.org/wiki/Cron) like specification to define timer schedules.
+
+Following is a summary of the specification
+
+- "day of month" represent which day of every month the job will be triggered. Values can range from 1 to 31
+- "hour" represent which hour of the day job will be triggered. Values can range from 0 to 23
+- "minute" represent which minute of the hour job will be triggered. Value can range from 0 to 59
+- "second" represent which second of the minute job will be triggered. Values can range from 0 to 59
+
+
+Other than their mentioned ranges, each of this field can also take few special entries.
+
+They are:
+
+- "\*" represents **every** . Like every hour, every day etc
+- "-" to represent **ranges**. Example: hour can be "2-6" to trigger a job every hour from 2 to 6
+- "/" to represent **after every**. Example: Hour value "\*/3" represents after every 3 hours
+
+More details can be found in  the underlying library's [documentation](https://godoc.org/github.com/robfig/cron#hdr-CRON_Expression_Format)
+
+Timers can be used to automate use cass like two part dosing, refugium light etc.
 
 ### Resources
 
