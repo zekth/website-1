@@ -16,7 +16,7 @@ keywords:
 - Check if reef-pi is running
 
 ```
-sudo ystemctl status reef-pi.service
+sudo systemctl status reef-pi.service
 ```
 
 - Check for errors in log
@@ -39,7 +39,7 @@ reef-pi -version
 ```
 sudo systemctl stop reef-pi.service
 sudo rm -rf /var/lib/reef-pi/reef-pi.db
-sudo ststemctl start reef-pi.service
+sudo systemctl start reef-pi.service
 ```
 
 
