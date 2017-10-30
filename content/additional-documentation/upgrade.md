@@ -15,7 +15,7 @@ keywords:
 
 - Determine appropriate reef-pi version based on raspberry pi (3 or zero) from the [release](https://github.com/reef-pi/reef-pi/releases/) page. Choose latest relase if you are unsure. For this documentation we'll use 1.0 release version on pi zero.
 
-- Open a terminal window using the ssh software of your choices.  SSH into your raspberry pi, then login into reef-pi and upgrade using following commands in a terminal
+- Open a terminal window using the ssh software of your choices.  SSH into your raspberry pi, then login into reef-pi and upgrade by entering the following commands in the terminal window
 
 - Download the release package on reef-pi (remember to use the correct pi-x.x package number)
 ```
