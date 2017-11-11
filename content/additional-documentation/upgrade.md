@@ -26,6 +26,9 @@ wget -c https://github.com/reef-pi/reef-pi/releases/download/0.5/reef-pi-1.0-pi0
 ```
 sudo apt-get remove reef-pi -y -f --purge
 ```
+- NOTE: If upgrading to 0.8.x from 0.7.x or below, remove the reef-pi.db
+
+rm var/lib/reef-pi.db
 
 - Install the downloaded reef-pi version
 ```
@@ -38,5 +41,7 @@ sudo systemctl status reef-pi.service
 ```
 
 - reef-pi new version should be visible from the UI as well (under system tab)
+
+- NOTE: If using wifi change go to the configuration tab and change interface setting to wlan0
 
 - Or you can use the procedure listed here: http://reef-pi.github.io/additional-documentation/development
