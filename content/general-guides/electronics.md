@@ -26,3 +26,7 @@ keywords:
 - Breadbord
 - Perf board
 - DIY IC board
+
+
+### References
+- [Sparkfun article on connectors](https://learn.sparkfun.com/tutorials/connector-basics)
