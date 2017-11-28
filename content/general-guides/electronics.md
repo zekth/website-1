@@ -25,4 +25,16 @@ keywords:
 
 - Breadbord
 - Perf board
-- DIY IC board
+- Perma proto board
+
+
+### Configuring reef-pi
+
+Pin number in outlets represent GPIO number.
+
+
+![Recommended wiring](/img/wiring/pinout-1.0.png)
+
+
+### References
+- [Sparkfun article on connectors](https://learn.sparkfun.com/tutorials/connector-basics)
