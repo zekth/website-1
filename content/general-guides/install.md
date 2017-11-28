@@ -109,4 +109,4 @@ sudo systemctl status reef-pi.service
 
 After this, you should be able to access reef-pi from the browser
 
-Default reef-pi login username and password both is set as 'reef-pi'. Update these from the settings section under conifiguration tab
+Default reef-pi login username and password both is set as **reef-pi**. Update these from the settings section under conifiguration tab

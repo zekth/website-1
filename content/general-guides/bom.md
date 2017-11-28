@@ -5,7 +5,7 @@ linktitle: bom
 title: Bill of Materials
 highlight: true
 description: Bill of Materials
-weight: 1
+weight: 3
 keywords:
 - reef-pi
 - reef tank

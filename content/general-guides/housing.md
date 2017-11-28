@@ -4,7 +4,7 @@ date: 2017-07-25
 linktitle: Housing
 title: Housing
 highlight: true
-weight: 6
+weight: 4
 keywords:
 - reef-pi
 - reef tank
