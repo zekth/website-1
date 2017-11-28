@@ -14,7 +14,13 @@ keywords:
 - coral
 ---
 
-This guide will walk you through the process of installing and configuring reef-pi in a new Raspberry Pi with a new microSD card. The process involves three main part, first we have to prepare the micorsd card for Raspberry Pi, then start Raspberry Pi with the microSD card and configure it for reef-pi usage, and then finally install and configuration of reef-pi on the freshly prepared Raspberry Pi. This guide assumes prior familiarity with computers, no programming knowledge is required.
+This guide will walk you through the process of installing and configuring reef-pi on a Raspberry Pi. The entire installation process involves three main stages.
+
+- Creating a MicroSD card for Raspberry Pi
+- Starting Raspberry Pi and configuring it to be used with  reef-pi
+- Install and configuration of reef-pi on the Raspberry Pi
+
+This guide assumes prior familiarity with computers, no programming knowledge is required.
 
 ### Prepare Raspberry Pi image
 
@@ -72,9 +78,9 @@ sudo systemctl enable ssh.service
 - Set time and date: Configure raspbian to use network time to synchronize its date & time information. Also set specific locale, to reflect the local time instead of UTC
 
 ```
-sudo systemctl start ntp.service
-sudo systemctl enable ntp.service
-sudo dpkg-reconfigure locales
+sudo systemctl start systemd-timesyncd.service
+sudo systemctl enable systemd-timesyncd.service
+sudo dpkg-reconfigure tzdata
 ```
 
 Finally, reboot Raspberry Pi to apply all the kernel configuration changes
@@ -85,12 +91,13 @@ sudo reboot
 
 ### Install reef-pi
 
-- On the raspberry pi, navigate to and download the latest [release](https://github.com/reef-pi/reef-pi/releases)
-- Copy the .deb out of the downloads folder to your desired location (generally in Documents folder).
-- Open Terminal and type following commands to install reef-pi
+- On the raspberry pi, navigate to the release page and copy link for the latest [release](https://github.com/reef-pi/reef-pi/releases)
+- Make sure you choose the right release package for pi 3 or pi zero.
+- Open Terminal and type following commands to download and  install reef-pi, assuming you are installing 1.0 release
 
 ```
-sudo dpkg -i reef-pi-<version>.deb
+wget -c https://github.com/reef-pi/reef-pi/releases/download/1.0/reef-pi-1.0-pi3.deb
+sudo dpkg -i reef-pi-1.0-pi3.deb
 ```
 
 - Check reef-pi is running
@@ -101,3 +108,5 @@ sudo systemctl status reef-pi.service
 
 
 After this, you should be able to access reef-pi from the browser
+
+Default reef-pi login username and password both is set as 'reef-pi'. Update these from the settings section under conifiguration tab
