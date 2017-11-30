@@ -4,7 +4,7 @@ date: 2017-07-20
 linktitle: devenvironment
 title: Development environment
 highlight: true
-weight: 6
+weight: 7
 keywords:
 - reef-pi
 - reef tank

@@ -4,7 +4,7 @@ date: 2017-09-15
 linktitle: remote
 title: Remote Access
 highlight: true
-weight: 3
+weight: 5
 ---
 
 This guide  meant to assist in establishing a remote connection to your reef-pi main control page using one of the two popular options, [RealVNC](https://www.realvnc.com) and [Tor](https://www.torproject.org/projects/torbrowser.html.en). reef-pi is normally accessible only within the home wifi network, using any of these two approaches you can access reef-pi from anywhere.
