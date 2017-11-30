@@ -28,3 +28,5 @@ keywords:
 - Standoffs
 - 12v power adapter
 - lm2596 voltage regulators
+
+Amazon shopping [list](http://a.co/dJL2FRt)

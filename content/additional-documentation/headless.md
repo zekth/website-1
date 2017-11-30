@@ -4,7 +4,7 @@ date: 2017-10-30
 linktitle: headless
 title: Headless
 highlight: true
-weight: 2
+weight: 6
 keywords:
 - reef-pi
 - reef tank

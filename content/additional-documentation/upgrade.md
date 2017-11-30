@@ -13,6 +13,10 @@ keywords:
 - coral
 ---
 
+- A running reef-pi controller version is always visible from the dashaboard footer.
+
+![reef-pi version](/img/upgrade/version.png)
+
 - Determine appropriate reef-pi version based on raspberry pi (3 or zero) from the [release](https://github.com/reef-pi/reef-pi/releases/) page. Choose latest relase if you are unsure. For this documentation we'll use 1.0 release version on pi zero.
 
 - Open a terminal window using the ssh software of your choices.  SSH into your raspberry pi, then login into reef-pi and upgrade by entering the following commands in the terminal window
@@ -40,8 +44,9 @@ sudo dpkg -i reef-pi-1.0-pi0.deb
 sudo systemctl status reef-pi.service
 ```
 
-- reef-pi new version should be visible from the UI as well (under system tab)
 
 - NOTE: If using wifi change go to the configuration tab and change interface setting to wlan0
 
 - Or you can use the procedure listed here: http://reef-pi.github.io/additional-documentation/development
+
+- Clear browser cache to reload the new UI
