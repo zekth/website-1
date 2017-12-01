@@ -11,6 +11,10 @@ keywords:
 - coral
 ---
 
+Breadboard and jumper wires for prototyping, testing
+Perma proto board of perf board for permanent installtion. Involves soldering
+Pin number in outlets represent GPIO number. Use recommended wiring
+Jumper wires.
 
 ### Connectors
 
@@ -28,13 +32,17 @@ keywords:
 - Perma proto board
 
 
-### Configuring reef-pi
+### Power source
 
-Pin number in outlets represent GPIO number.
+- Wall wart power source
+- PCB modules
+- Voltage regulators
+- Power mosfets for powering high current equipment
 
 
 ![Recommended wiring](/img/wiring/pinout-1.0.png)
 
 
 ### References
+
 - [Sparkfun article on connectors](https://learn.sparkfun.com/tutorials/connector-basics)
