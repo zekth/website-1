@@ -1,6 +1,6 @@
 ---
 linktitle: electronics
-title: Wiring
+title: Electronics & wiring
 highlight: true
 weight: 2
 keywords:
