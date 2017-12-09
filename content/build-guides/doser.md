@@ -1,6 +1,7 @@
 ---
 linktitle: doser
 title: Dosing controller
+draft: true
 highlight: true
 weight: 7
 keywords:

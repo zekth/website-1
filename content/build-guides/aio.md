@@ -3,6 +3,7 @@ linktitle: aio
 title: All-in-one controller
 highlight: true
 weight: 8
+draft: true
 keywords:
 - reef-pi
 - reef tank
