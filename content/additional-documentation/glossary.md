@@ -126,10 +126,6 @@ Saves a local repository commit to a GitHub project.
 
 Pulse Width Modulation - A method of diming leds current by pulsing current.
 
-#### Ranjib
-
-The main  man, father figure, and coder of Reef-Pi.
-
 #### Raspberry Pi
 
 A single board computer that is used in the Reef-pi controller.  Depending on the requirements, a Pi zero or Pi B may be used instead of the Pi 3.
@@ -138,7 +134,7 @@ A single board computer that is used in the Reef-pi controller.  Depending on th
 
 The 7" version of the official Raspberry Pi touchscreen.  Other sizes are also available.
 
-#### Reef-Pi
+#### reef-pi
 
 The software part of the reef tank controller based on the Raspberry Pi with software developed by Ranjib.
 
