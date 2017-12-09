@@ -1,6 +1,7 @@
 ---
 linktitle: lighting
 author: "Ranjib Dey"
+draft: true
 date: 2017-09-25
 title: Camera controller
 highlight: true

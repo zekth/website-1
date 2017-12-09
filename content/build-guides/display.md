@@ -3,6 +3,7 @@ author: "Ranjib Dey"
 date: 2017-07-21
 linktitle: touchscreen
 title: Touchscreen display
+draft: true
 highlight: true
 weight: 6
 keywords:
