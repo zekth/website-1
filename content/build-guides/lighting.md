@@ -56,7 +56,7 @@ Because Kessil lights expect 10-volt control signals instead of a 5-volt signal,
 
 ### Wiring
 
-![breadboard](https://reef-pi.github.io/img/light/breadboard.png)
+![breadboard](/img/light/breadboard.png)
 
 
 ### Installation & Configuration
@@ -65,17 +65,17 @@ Because Kessil lights expect 10-volt control signals instead of a 5-volt signal,
 
 - Once reef-pi is installed and running go to systems page, enable lighting capability and reload reef-pi
 
-![systems](https://reef-pi.github.io/img/light/setup_1.png)
+![systems](/img/light/setup_1.png)
 
 - PWM outputs such as the ones that used for light controls are called *jacks* in reef-pi. A jack can have multiple channels. Each channel is represented by the controlling pin number of the PCA9685 board. For a Kessil controller, we will be declaring a jack named *J1* with two pins, each pin number separated by a comma, under the system tab.
 
-![jacks](https://reef-pi.github.io/img/light/setup_2.png)
+![jacks](/img/light/setup_2.png)
 
 - Once the jack is declared we can head to lighting tab and declare lighting equipment. We’ll use an example [A80](http://www.kessil.com/aquarium/Saltwater_A80_Tuna_Blue.php) Kessil light and assign the J1 jack created above to it.
 
 - reef-pi will now show corresponding control settings under the A80 light. Select the inverse checkbox to indicate that our actual generated control signal should be inverse of our specified values, this is a side effect of using an NPN transistor which operates in [sinking current](https://electronics.stackexchange.com/questions/74636/sinking-and-sourcing-current) mode.
 
-![light](https://reef-pi.github.io/img/light/setup_3.png)
+![light](/img/light/setup_3.png)
 
 ### Usage
 
@@ -83,15 +83,16 @@ Because Kessil lights expect 10-volt control signals instead of a 5-volt signal,
 
 reef-pi will show a single slider for each channel defined in a light. This can be used to control the signal of that channel. Users can use the slider to set a specific value and then hit the update button to see the effect. In this mode user directly control the value of the output signal.
 
-![manual](https://reef-pi.github.io/img/light/setup_4.png)
+![manual](/img/light/setup_4.png)
 
 #### Setting up 24 hour light cycle
 
 Alternatively, users can also choose the automatic mode, by selecting the *auto* checkbox, which will render 12 vertical sliders each representing expected control signal values at 2-hour intervals, thus providing the user with 24-hour automatic controls. Specify the desired diurnal cycle values and click on the *update* button. reef-pi will automatically compute the right values for current time and apply it.
 
-![auto](https://reef-pi.github.io/img/light/setup_5.png)
+![auto](/img/light/setup_5.png)
 
 ### Resources
 
 - Adafruit [tutorial](https://learn.adafruit.com/adafruit-16-channel-servo-driver-with-raspberry-pi?view=all) on PCA9685 board and Raspberry Pi.
 - [Fritzing project file](https://github.com/reef-pi/DesignFiles/raw/master/PowerStrip.fzz)
+- [reef2reef build post](https://www.reef2reef.com/threads/reef-pi-1-0-release-building-a-kessil-controller.343672/#post-4281610)
