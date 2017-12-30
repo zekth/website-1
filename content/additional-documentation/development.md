@@ -100,7 +100,7 @@ Compile all jsx code to javascript
 ./node_modules/.bin/webpack -d
 ```
 
-At this point both reef-pi binary and the javascript components are built to run reef-pi on the development machine. All we need now is to start reef-pi in dev_mode (so that all device drivers calls are ignored).
+Next, start reef-pi in dev_mode (so that all device drivers calls are ignored).
 
 ```
 DEV_MODE=1 ./bin/reef-pi

@@ -33,6 +33,6 @@ The recommended [Bill of Materials](/general-guides/bom) contains an example enc
 ### References
 
 - Sparkfun article on fabricating a [project enclosure](https://www.sparkfun.com/tutorials/38)
-- Pnoko's guide to making custom [electronics project enclosure](https://www.ponoko.com/blog/how-to-make/making-enclosures-for-electronics-with-ponoko/)
+- Ponoko's guide to making custom [electronics project enclosure](https://www.ponoko.com/blog/how-to-make/making-enclosures-for-electronics-with-ponoko/)
 - Wooden enclosure tutorial from [Make](https://www.youtube.com/watch?v=-vgvXat6GBU)
 
