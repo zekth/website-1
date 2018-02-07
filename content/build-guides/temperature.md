@@ -36,6 +36,7 @@ reef-pi can monitor reef tank temperature using a DS18B20 temperature probe. The
 - [micro sd card](https://www.adafruit.com/product/2693)
 - 5v 2.4 amp [power adapter](https://www.adafruit.com/product/1995) for Raspberry Pi
 - [DS18B20 temperature probe](https://www.amazon.com/dp/B01B27R21Y/)
+- One [4.7K resistor](https://www.amazon.com/dp/B072BL2VX1/)
 - Relay, with at least 2 channels [example](https://www.amazon.com/dp/B00E0NTPP4)
 - AC receptacles [example](https://www.amazon.com/gp/product/B002DQT5UK/)
 - [3.5mm female, panel mount audio jack](https://www.amazon.com/dp/B013AP77T8)
