@@ -47,7 +47,8 @@ Water level sensors such as photoelectric sensors or float switches act as elect
 
 ### Wiring
 
-![breadboard](/img/ato/breadboard.png)
+Follow dfrobot's wiring [guide](https://www.dfrobot.com/wiki/index.php/Liquid_Level_Sensor-FS-IR02_SKU:_SEN0205)
+
 
 ### Installation & Configuration
 
