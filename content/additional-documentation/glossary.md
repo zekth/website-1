@@ -4,7 +4,7 @@ date: 2017-08-24
 linktitle: glossary
 title: Glossary
 highlight: true
-weight: 4
+weight: 5
 keywords:
 - reef-pi
 - reef tank
