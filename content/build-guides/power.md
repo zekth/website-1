@@ -18,6 +18,7 @@ Automated power strips allow on-demand and timer based control of AC outlets (11
 
 The reef-pi software uses the Raspberry Pi’s GPIO pins to control digital relays, which in turn controls high voltage, high current AC or DC equipment. This mechanism is used across timer or sensor based (like temperature or ATO controllers) equipment controls.
 
+
 ### Things to consider
 
 - Choice of relay: Controlling high AC voltages via Raspberry Pi involves relays. Relays can be optocouplers, mechanical or solid state. Mechanical relays are cheapest, optocouplers are safest and expensive. Solid state relays are somewhere in the middle, safer, more expensive and last longer than mechanical relays but cheaper more readily available that optocoupler. We recommend optocoupler based relays where price is not a factor, solid state relays where current requirements are low (less than 2 amp) and mechanical relays for beginners or anything else. 
@@ -122,6 +123,15 @@ They are:
 More details can be found in  the underlying library's [documentation](https://godoc.org/github.com/robfig/cron#hdr-CRON_Expression_Format)
 
 Timers can be used to automate use cases like two part dosing, refugium light etc.
+
+### A note on outlet limits
+
+reef-pi uses one GPIO  for rach outlet control. Thus, a single reef-pi can control at most 26 outlets (because there are 26 GPIOs). But a build using all 26 GPIO will not be able to support most other modules, since water level sensor (used for ATO) and mechanical swicthes/push buttons also uses GPIOs. But if you do want to use reef-pi this way, Disable spi, one wire , i2c and pwm via raspi-config utility to use all 26 GPIO.
+
+It is safe to use reef-pi build can control at most 22 outlets. Enable i2c, pwm and disable spi,uart to use 22 GPIO pins. This leave 1 GPIO for water level sensor, 1 for temperature sensor and two for i2c communication (for pca9685 pwm IC).
+
+If all GPIO pins are used up for relays, then none can will be left to be used for ATO or any other modules that require inlets (where GPIOs are used to read data). While planning, consider how many inlets (ATO, leak detector) or any other use (like mechanical push buttons, buzzers etc), total number of outlets and inlets has to be less or equal to total available GPIO pins. For example, a build for 2 ATO, 1 leak detector, 1 buzzer, 1 push button can support 17 outlet relays at max (2+1+1+1 + 17 == 22), while allowing temperature and ph probes.
+
 
 ### Resources
 

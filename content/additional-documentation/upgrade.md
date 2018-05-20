@@ -26,14 +26,6 @@ keywords:
 wget -c https://github.com/reef-pi/reef-pi/releases/download/0.5/reef-pi-1.0-pi0.deb
 ```
 
-- Remove the existing reef-pi
-```
-sudo apt-get remove reef-pi -y -f --purge
-```
-- NOTE: If upgrading to 0.8.x from 0.7.x or below, remove the reef-pi.db
-
-rm var/lib/reef-pi.db
-
 - Install the downloaded reef-pi version
 ```
 sudo dpkg -i reef-pi-1.0-pi0.deb

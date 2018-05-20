@@ -34,7 +34,7 @@ sudo journalctl -fu reef-pi.service
 reef-pi -version
 ```
 
-- Resetting reef-pi 's data base
+- Resetting reef-pi's database
 
 ```
 sudo systemctl stop reef-pi.service
@@ -42,4 +42,10 @@ sudo rm -rf /var/lib/reef-pi/reef-pi.db
 sudo systemctl start reef-pi.service
 ```
 
+- One of the common reason gotcha is dev_mode being enabled. Dev mode allows reef-pi development in non-raspberry pi system and it mask all physical control (they are faked out). Make sure dev_mode is disabled or unchecked, under **Configuration -> Settings -> Capabilities**. Note: changing any of the capabilities will require a reload to take effect.
+
+- Check if time is configured correctly: All of reef-pi timers and almost all periodic tasks rely on system time. Make sure timezone is configured correctly using **raspi-config**.
+
+
+- What information to share when asking for help? If you are still stuck, feel free to reach out to reef2reef thread on reef-pi. Please note down reef-pi version, Pi version, circuit details (an image will be very helpful) and shared those details while asking question. They help deducing the issues faster.
 
