@@ -11,11 +11,6 @@ keywords:
 - controller
 - raspberry pi
 - coral
-- reef-pi
-- reef tank
-- controller
-- raspberry pi
-- coral
 ---
 
 reef-pi porvides a simple HTTP JSON based **A**pplication **P**rogramming **I**nterface. reef-pi web user interface itself is built using this API. API can be used to control reef-pi from an external system as well. Following is the reef-pi 1.0 API which will not have any breaking changes till the next major release (2.0). reef-pi 1.x series release may receive new features and corresponding API endpoints but all of the 1.0 API endpoints will be intact and not have any breaking changes. Breaking changes will require next major release.
