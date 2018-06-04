@@ -11,6 +11,7 @@ keywords:
 - pico reef
 - maker faire
 ---
+![FTS](/img/tanks/bozeman.jpg)
 
 Bozeman is a year and half old pico reef tank named after the small town of Bozeman, Montana. Ultra low maintenance tank with very easy to keep, mostly soft corals
 
@@ -20,13 +21,13 @@ Bozeman is a year and half old pico reef tank named after the small town of Boze
 
 - Montipora capricornis & Blue tyree challice & montipora capricornis
 - Green star polyp & Green striped mushroom
-- Grandis palythoa & Green palythoa
+- Grandis palythoa & Green palythoa ![palythoa](/img/tanks/boze-2.jpg)
 
 #### Invertebrates
 
-- Squat shrimp
+- Squat shrimp ![squat shrimp](/img/tanks/boz-4.jpg)
 - Trochus snail
-- Feather duster worm
+- Feather duster worm ![feather duster](/img/tanks/boz-5.jpg)
 - Nassarius snail
 
 #### Critters
