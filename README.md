@@ -18,7 +18,7 @@ git clone https://github.com/reef-pi/website
 
 ```
 cd website
-git clone git clone https://github.com/nurlansu/hugo-sustain.git themes/hugo-sustain
+git clone https://github.com/nurlansu/hugo-sustain.git themes/hugo-sustain
 ```
 
 -  Run hugo from the website repository

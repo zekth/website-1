@@ -13,7 +13,9 @@ keywords:
 - coral
 ---
 
-reef-pi is written in [go](https://golang.org/) and [react](https://facebook.github.io/react/). This guide will walk through the steps involved in setting up go, nodejs and finally reef-pi development environment. This guide assume OSX or Linux as the development platform, but should be useful for other platforms as well.
+reef-pi is written in [go](https://golang.org/) and [react](https://facebook.github.io/react/). This guide will walk through the steps involved in setting up go, nodejs, and finally reef-pi development environment. This guide assume OSX or Linux as the development platform.  
+
+Development on Windows will require a virtual machine running OSX or Linux and the project must not be on a shared folder.  If you are determined to develop on Windows, then conditional compilation would be required for the rpi gpio, i2c, and pwm drivers.
 
 ### Setup go
 
