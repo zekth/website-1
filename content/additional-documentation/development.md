@@ -62,7 +62,6 @@ This will install both nodejs and npm, the package manager for nodejs based libr
 Once go and nodejs is setup, you are ready to start with reef-pi code base itself.
 
 - Copy reef-pi code from github to your $GOPATH
-
 ```
 git clone https://github.com/reef-pi/reef-pi.git $GOPATH/src/github.com/reef-pi/reef-pi
 ```
@@ -75,32 +74,50 @@ All following commands & instructions assume you are working from the reef-pi re
 cd $GOPATH/src/github.com/reef-pi/reef-pi
 ```
 
-- Download go and react dependencies
+- Download go and react dependencies  
 
 ```
-make go-get
-npm install
+make install
 ```
 
 This will install reactjs, webpack and ancillary package used by reef-pi user interface (front end) code.
 
-- Build reef-pi binary
+- Build reef-pi binary and ui assets
 ```
 make
 ```
 
-- Compile all jsx code to javascript
-```
-./node_modules/.bin/webpack -d
-```
-
 - Finally, start reef-pi in dev_mode (so that all device drivers calls are ignored).
-
 ```
-DEV_MODE=1 ./bin/reef-pi
+make start-dev
 ```
 
 Head over to your browser [http://localhost:8080/](http://localhost:8080) to see the reef-pi in action.
+
+### Running Automated Tests
+
+reef-pi has the following automation tools to promote code quality:  
+
+- Go tests
+```
+make test
+```
+
+- Javascript code linting
+```
+npm run standard
+```
+
+- Javascript unit tests
+```
+npm test
+```
+
+- Automated smoke test
+```
+make start-dev
+node ./test/smoke.js
+```
 
 
 ### Running reef-pi on a raspberry pi
