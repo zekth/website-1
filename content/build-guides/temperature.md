@@ -4,7 +4,7 @@ date: 2017-09-27
 linktitle: temperature
 title: Temperature controller
 highlight: true
-weight: 4
+weight: 2
 keywords:
 - reef-pi
 - reef tank

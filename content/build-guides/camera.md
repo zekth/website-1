@@ -3,9 +3,8 @@ linktitle: lighting
 author: "Ranjib Dey"
 draft: true
 date: 2017-09-25
-title: Camera controller
-highlight: true
-weight: 6
+title: Camera module
+weight: 8
 keywords:
 - reef-pi
 - reef tank

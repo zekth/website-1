@@ -4,7 +4,7 @@ author: "Ranjib Dey"
 date: 2017-09-25
 title: Lighting controller
 highlight: true
-weight: 2
+weight: 4
 keywords:
 - reef-pi
 - reef tank

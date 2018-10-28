@@ -5,8 +5,19 @@
       <section id="about">
         <div class="container lead">
         <h1>reef-pi</h1> 
-        <div>
-          Welcome to the official website of reef-pi - An opensource reef tank controller based on <a href='https://www.raspberrypi.org/'>Raspberry Pi</a>. reef-pi is a modular, affordable and <a href='/additional-documentation/api/'>extendable</a> DIY controller that can automate day to day reef keeping chores such as auto top off, temperature control and dawn to dusk light cycle.
+        <div style='text-align: left'>
+          <p>
+            Welcome to the official website of reef-pi, an opensource reef tank controller based on <a href='https://www.raspberrypi.org/'>Raspberry Pi</a>
+          </p>
+          <p>
+            reef-pi is a <a href="/additional-documentation/values">modular, affordable</a> and <a href='/additional-documentation/api/'>extendable</a> <a href='https://en.wikipedia.org/wiki/Do_it_yourself'>DIY</a> controller that can automate day to day reef keeping chores such as auto top off, temperature control and dawn to dusk light cycle, automated dosing, ph monitoring.
+          </p>
+          <p>
+            reef-pi project provides opensource software, parts list and documentation for building the physical controller.
+          </p>
+         <p>
+          To build a reef-pi controller, start with <a href='/general-guides/'>general guides</a> which gives overview of the build process and main controller installation procedure, then use the <a href='/build-guides/'> module specific </a> guides to for individual modules.
+          </p>
         </div>
         <div>
           <table>
@@ -15,10 +26,20 @@
               <td><img src='img/aio.png' alt='aio-build' border='1'/></td>
           </table>
         </div>
-        <div>
-          If you are building a new controller, start with <a href='/general-guides/'>general guides</a> which covers the main controller installation, then use the <a href='/build-guides/'> module specific </a> guides to configure individual modules. You can follow reef-pi's ongoing development in the master thread at <a href="https://www.reef2reef.com/threads/reef-pi-an-open-source-raspberry-pi-based-reef-tank-controller.289256">reef2reef</a>.  Contact at <a href="https://twitter.com/{{ .Site.Params.Social.Twitter }}">@{{ .Site.Params.Social.Twitter }}</a> or by <a href="mailto:{{ .Site.Params.Social.Email }}">email</a>. Website specific bugs & improvements can be reported <a href='https://github.com/reef-pi/website/issues/new'>here</a>. If you are interested in reef-pi software development, use the <a href='https://github.com/reef-pi/reef-pi'>github repository</a> and <a href='https://reef-pi.slack.com'>slack channel</a> to get started. A minimal development environment setup guide is also available <a href='/additional-documentation/development/'>here</a>.
-        {{ partial "social.html" . }}
-        </div>
+        <ul style='text-align: left'>
+          <li>
+            If you are interested in reef-pi software development, use the <a href='https://github.com/reef-pi/reef-pi'>github repository</a> or send an email to <a href="mailto:{{ .Site.Params.Social.Email }}"></a> for <a href='https://reef-pi.slack.com'>slack channel</a> invite. A comprehensive <a href='/additional-documentation/development/'> development environment setup</a> guide is also available
+           </li>
+          <li>
+           You can follow reef-pi's ongoing development in the master thread at <a href="https://www.reef2reef.com/threads/reef-pi-an-open-source-raspberry-pi-based-reef-tank-controller.289256">reef2reef</a>
+           </li>
+          <li>
+            Website specific bugs & improvements can be reported <a href='https://github.com/reef-pi/website/issues/new'>here</a>
+          </li>
+           <li>
+            For general enquiry, contact at <a href="https://twitter.com/{{ .Site.Params.Social.Twitter }}">@{{ .Site.Params.Social.Twitter }}</a> or by <a href="mailto:{{ .Site.Params.Social.Email }}">email</a>
+          </li>
+         </ul> {{ partial "social.html" . }}
       </section>
     </div>
     {{ partial "footer" . }}

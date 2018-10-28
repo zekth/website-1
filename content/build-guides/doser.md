@@ -1,9 +1,9 @@
 ---
 linktitle: doser
-title: Dosing controller
-draft: true
+title: Dosing system
+draft: false
 highlight: true
-weight: 7
+weight: 5
 keywords:
 - reef-pi
 - reef tank
