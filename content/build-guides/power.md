@@ -132,8 +132,14 @@ It is safe to use reef-pi build can control at most 22 outlets. Enable i2c, pwm 
 
 If all GPIO pins are used up for relays, then none can will be left to be used for ATO or any other modules that require inlets (where GPIOs are used to read data). While planning, consider how many inlets (ATO, leak detector) or any other use (like mechanical push buttons, buzzers etc), total number of outlets and inlets has to be less or equal to total available GPIO pins. For example, a build for 2 ATO, 1 leak detector, 1 buzzer, 1 push button can support 17 outlet relays at max (2+1+1+1 + 17 == 22), while allowing temperature and ph probes.
 
+### Notes for builds from scratch
+
+- Always switch using the Hot wire, not with the neutral wire
+- Stick to country specific color coding scheme. For US
+
 
 ### Resources
 
 - [Fritzing project file](https://github.com/reef-pi/DesignFiles/raw/master/PowerStrip.fzz)
+- [Cron syntax cheatsheet](https://healthchecks.io/docs/cron/)
 

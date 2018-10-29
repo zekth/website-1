@@ -49,3 +49,5 @@ sudo systemctl start reef-pi.service
 
 - What information to share when asking for help? If you are still stuck, feel free to reach out to reef2reef thread on reef-pi. Please note down reef-pi version, Pi version, circuit details (an image will be very helpful) and shared those details while asking question. They help deducing the issues faster.
 
+
+- Troubleshooting circuits: Check voltage at every connection. Ends of jumper pins. Check for continuity before wiring.
