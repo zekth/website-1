@@ -20,6 +20,8 @@ This guide will walk you through the process of installing and configuring reef-
 - Starting Raspberry Pi and configuring it to be used with  reef-pi
 - Install and configuration of reef-pi on the Raspberry Pi
 
+A beginner friendly [installation guide](https://learn.adafruit.com/reef-pi-installation-and-configuration) is also available on adafruit.com.
+
 This guide assume some prior familiarity with computers, but no programming knowledge is required.
 
 ### Prepare Raspberry Pi image

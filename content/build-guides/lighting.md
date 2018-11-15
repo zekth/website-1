@@ -23,7 +23,7 @@ Other than performing the diurnal cycle lighting intensity is also controlled wh
 
 reef-pi allows automation of T5 and metal halides using [equipments and timers](/power/), to gradually switch on/off multiple T5/metal halides since they do not offer intensity control.
 
-This build guide specifically covers LED automation which allows intensity control, to simulate diurnal cycle or perform on-demand controls (for things like photography). Given there are a wide variety of LED lights available, we’ll only cover one of the most popular LED light, i.e Kessil. Though this guide walks through building a Kessil controller, reef-pi can easily control most of the popular LEDs with minimal changes on the electronics side, and without any software changes.
+This build guide specifically covers LED automation which allows intensity control, to simulate diurnal cycle or perform on-demand controls (for things like photography). Given there are a wide variety of LED lights available, we’ll only cover one of the most popular LED light, i.e Kessil. Though this guide walks through building a Kessil controller, reef-pi can easily control most of the popular LEDs with minimal changes on the electronics side, and without any software changes. A beginner friendly [light controller guide](https://learn.adafruit.com/reef-pi-lighting-controller) is also available on adafruit.com.
 
 ### How this work
 

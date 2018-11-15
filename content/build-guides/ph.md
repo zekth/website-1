@@ -13,7 +13,7 @@ keywords:
 - pH
 ---
 
-The guide provides details on how to build a pH monitoring system using reef-pi
+The guide provides details on how to build a pH monitoring system using reef-pi. A beginner friendly [pH monitor guide](https://learn.adafruit.com/reef-pi-guide-7-ph-monitoring) is also available from adafruit.com.
 
 ### How this work
 

@@ -15,7 +15,7 @@ keywords:
 - iot
 ---
 
-Maintaining a stable temperature is a key requirement for a thriving reef tank. Most reef tanks maintain a stable temperature within 77 to 80 degree Fahrenheit for optimal coral growth. Depending upon the environment where reef tank is located this might require cooling down the tank using a chiller or heating it up with a heater. Because environmental temperature varies during day and night at most places, reef tank temperature is often monitored and controlled automatically using a controller. Heaters are also most frequently failed equipment in a reef tank, leading to tank crash. Temperature controller helps in avoiding such catastrophic situation as well.
+Maintaining a stable temperature is a key requirement for a thriving reef tank. Most reef tanks maintain a stable temperature within 77 to 80 degree Fahrenheit for optimal coral growth. Depending upon the environment where reef tank is located this might require cooling down the tank using a chiller or heating it up with a heater. Because environmental temperature varies during day and night at most places, reef tank temperature is often monitored and controlled automatically using a controller. Heaters are also most frequently failed equipment in a reef tank, leading to tank crash. Temperature controller helps in avoiding such catastrophic situation as well. A beginner friendly [guide](https://learn.adafruit.com/reef-pi-guide-3-temperature-controller) is also available on adafruit.com as well.
 
 In this guide we'll be using reef-pi to build a temperature controller that will monitor the temperature of reef tank and turn on the heater or cooler when the temperature goes above or below a specified range.
 
