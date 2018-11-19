@@ -3,7 +3,7 @@ author: "Ranjib Dey"
 date: 2017-07-21
 ---
 
-Since reef-pi is a DIY controller, users get to customize their build as per their needs. This leads to a lot of variations in different reef-pi builds.  Irrespective of this, almost all reef-pi builds go through somewhat same build process. This section provides a high-level overview of the build and maintenance of a reef-pi controller along with detailed documentation on [software installation](/general-guides/install/), [circuit](/general-guides/electronics) and [housing](/general-guides/housing). These three are the most common aspects of every reef-pi build. It is recommended to read through this documentation before starting with an actual build.
+Since reef-pi is a DIY controller, users get to customize their build as per their needs. This leads to a lot of variations in different reef-pi builds.  Irrespective of this, almost all reef-pi builds go through somewhat same build process. This section provides a high-level overview of build and maintenance of a reef-pi controller along with detailed documentation on [software installation](/general-guides/install/), [circuit construction](/general-guides/electronics) and [enclosure construction](/general-guides/housing). These are the three common aspects of every reef-pi build. It is recommended to read through this documentation before starting with an actual build.
 
 ### Plan
 
@@ -11,7 +11,7 @@ reef-pi is a versatile and modular controller that allows users to customize the
 
 ### Order components
 
-Individual reef-pi build guides provide links to purchase required components. Other than Raspberry Pi, reef-pi mainly uses [Adafruit](https://www.adafruit.com) products. There are few ancillary components that are sourced from Amazon. If you are in the US, I strongly recommend using Adafruit, this project will not be a reality without them. reef-pi guides are also hosted in adafruit. The reef-pi project does not hold strong opinions on components. Users are more than welcome to use alternatives (e.g. different types of enclosures). When the software requires a specific component, we explicitly call it out. We also highly recommend salvaging older electronics. reef-pi assumes users are making judicious choices and are aware of the risks when choosing alternative components. Almost all the components can be ordered in steps. Users can get started with just a Raspberry Pi, and order components later on, incrementally working on the build. This allows iterative build process.
+Individual reef-pi build guides provide links to purchase required components. Other than Raspberry Pi, reef-pi mainly uses [Adafruit](https://www.adafruit.com) products. There are few ancillary components that are sourced from Amazon. If you are in the US, I recommend using Adafruit, since the guides and my personal builds are tested against their products. Users are welcome to use alternatives (e.g. different vendors or salvaging older electronics). When the software requires a specific component, we explicitly call it out. We also highly recommend salvaging older electronics. reef-pi assumes users are making judicious choices and are aware of the risks when choosing alternative components. Almost all the components can be ordered in steps. Users can get started with just a Raspberry Pi, and order components later on, incrementally working on the build. This allows iterative build process.
 
 ### Build the physical controller
 

@@ -2,7 +2,7 @@
 author: "Ranjib Dey"
 date: 2017-07-25
 linktitle: Housing
-title: Housing
+title: Enclosure construction
 highlight: true
 weight: 3
 keywords:

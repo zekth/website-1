@@ -2,7 +2,7 @@
 author: "Ranjib Dey"
 date: 2017-07-25
 linktitle: Installation
-title: Install & configuration
+title: Software installation
 highlight: true
 description: Installation and configuration of reef-pi controller
 weight: 1
