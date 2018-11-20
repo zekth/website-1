@@ -1,8 +1,9 @@
 ---
 linktitle: ato
 title: Auto Top Off
-highlight: true
-weight: 3
+highlight: false
+draft: true
+weight: 5
 keywords:
 - reef-pi
 - reef tank
@@ -26,7 +27,7 @@ Water level sensors such as photoelectric sensors or float switches act as elect
 
 ### Things to consider
 
-- Photoelectric sensor or float switch: Both of these sensors act as a switch and returns **off** when in air  and **on** when submerged in water. Hence reef-pi does not need any special configuration for them and they can be used in place of the other. But they work very differently. Photoelectric sensors are costlier than float switches, require additional electronics to work, and are not prone to salt creep. While float switches are inexpensive, requires no additional circuit, can be easily sourced, but prone to salt creep. We recommend using photoelectric sensor. The recommended [Bill of Materials](/general-guides/bom) contains a sample photoelectric sensor.
+- Photoelectric sensor or float switch: Both of these sensors act as a switch and returns **off** when in air  and **on** when submerged in water. Hence reef-pi does not need any special configuration for them and they can be used in place of the other. But they work very differently. Photoelectric sensors are costlier than float switches, require additional electronics to work, and are not prone to salt creep. While float switches are inexpensive, requires no additional circuit, can be easily sourced, but prone to salt creep. We recommend using photoelectric sensor. The recommended [Bill of Materials](/guides/bom) contains a sample photoelectric sensor.
 
 - ATO pump: These are used to pour fresh RO/DI water (without salt) in the tank to bring up the water level. Consider how you want to position the water reservoir, ATO pump has to lift water to the required height. It is also important to consider the volume of water the ATO pump will pour per check interval (set to 1 minute by default), it should not be too much compared to the volume of the tank, else salinity will fall.
 
@@ -52,7 +53,7 @@ Follow dfrobot's wiring [guide](https://www.dfrobot.com/wiki/index.php/Liquid_Le
 
 ### Installation & Configuration
 
-- Follow reef-pi installation [guide](/general-guides/install) to setup reef-pi on Raspberry Pi zero.
+- Follow reef-pi installation [guide](/guides/intro) to setup reef-pi on Raspberry Pi zero.
 - Enable ATO capability from **Configuration** tab, reload reef-pi.
 ![breadboard](/img/ato/ato-enable.png)
 - Refresh your browser after reload. This will bring up the ATO tab. At this point, ATO feature is enabled, but ATO sensor is not monitored periodically.

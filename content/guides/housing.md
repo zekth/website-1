@@ -27,7 +27,7 @@ The controller housing will be used to mount various connectors, and the wall th
 It is popular to use plastic (ABS) project box or any other ready-made enclosures for the build. While they are sufficient for most builds, consider fabrication requirements while choosing one. For mounting jacks and sockets you may need to drill holes or cut shapes in the housing. For electrical sockets, it is important to use a housing with electrically safe materials. Personally, I use a lot of wooden housing which is why most guides might have images for wooden housing, but this is only because I am comfortable with woodworking. I do not recommend going this route unless you are familiar with wood working.
 
 
-The recommended [Bill of Materials](/general-guides/bom) contains an example enclosure. We highly recommend you to think through your controller features and electronics before deciding on an enclosure. The Sparkfun guide provides some helpful tips on how to do this.
+The recommended [Bill of Materials](/guides/bom) contains an example enclosure. We highly recommend you to think through your controller features and electronics before deciding on an enclosure. The Sparkfun guide provides some helpful tips on how to do this.
 
 
 ### References

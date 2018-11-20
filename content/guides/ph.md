@@ -3,7 +3,7 @@ linktitle: ph
 title: pH Monitor
 draft: true
 highlight: true
-weight: 6
+weight: 9
 keywords:
 - reef-pi
 - reef tank

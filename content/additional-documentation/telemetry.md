@@ -13,7 +13,7 @@ keywords:
 - coral
 ---
 
-Telemetry features in reef-pi allow users to capture, visualize and alert on sensor or controller health data. Telemetry functionality help in avoiding tank accidents due to equipment failure (such as a bad heater cooking up a reef tank) or to understand long-term trends in tank parameters. This guide will walk through the basic telemetry features and how to configure them. This guide assumes you have a running reef-pi controller already. Follow the [general guides](/general-guides/) first  if you do not have a working reef-pi installation.
+Telemetry features in reef-pi allow users to capture, visualize and alert on sensor or controller health data. Telemetry functionality help in avoiding tank accidents due to equipment failure (such as a bad heater cooking up a reef tank) or to understand long-term trends in tank parameters. This guide will walk through the basic telemetry features and how to configure them. This guide assumes you have a running reef-pi controller already. Follow the [general guides](/guides/) first  if you do not have a working reef-pi installation.
 
 ### Sending telemetry data to adafruit.io
 

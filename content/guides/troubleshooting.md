@@ -4,7 +4,7 @@ date: 2017-07-21
 linktitle: Troubleshooting
 title: Troubleshooting
 highlight: true
-weight: 1
+weight: 12
 keywords:
 - reef-pi
 - reef tank

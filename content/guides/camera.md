@@ -31,7 +31,7 @@ The camera controller provides easy and convenient way to take reef tank photos 
 
 ### Installation & Configuration
 
-- Follow reef-pi installation [guide](../../general-guides/install) to setup reef-pi on Raspberry Pi zero.
+- Follow reef-pi installation [guide](../../guides/install) to setup reef-pi on Raspberry Pi zero.
 
 - Install camera
 

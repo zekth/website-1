@@ -4,7 +4,8 @@ date: 2017-09-27
 linktitle: temperature
 title: Temperature controller
 highlight: true
-weight: 2
+draft: true
+weight: 6
 keywords:
 - reef-pi
 - reef tank
@@ -50,7 +51,7 @@ reef-pi can monitor reef tank temperature using a DS18B20 temperature probe. The
 
 ### Installation & Configuration
 
-- Follow reef-pi installation [guide](../../general-guides/install) to setup reef-pi on Raspberry Pi.
+- Follow reef-pi installation [guide](../../guides/intro) to setup reef-pi on Raspberry Pi.
 
 - Once reef-pi is installed, enable **temperature** sub-system under Configuration -> Settings tab. Click on the **Update** button, and **reload** reef-pi. Temperature sub-system depends upon **Equipments** sub-system, make sure it is enabled.
 ![temp-capability](/img/temperature/temp-capability.png)

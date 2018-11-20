@@ -72,7 +72,7 @@ A component used in the temperature controller and possibly other builds.
 
 #### General Guides
 
-Reef-pi specific guides used to install and configure reef-pi, touchscreen, How to Build A Housing, How To Ask For Help, Troubleshooting, overview of Electronic Components, etc.  The page is located at https://reef-pi.github.io/general-guides/.
+Reef-pi specific guides used to install and configure reef-pi, touchscreen, How to Build A Housing, How To Ask For Help, Troubleshooting, overview of Electronic Components, etc.  The page is located at https://reef-pi.github.io/guides/.
 
 #### Git
 

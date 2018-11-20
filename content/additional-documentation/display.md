@@ -39,7 +39,7 @@ The touchscreen display is only tested with Raspberry Pi 3, not with pi zero.
 
 ### Installation & Configuration
 
-- Follow reef-pi installation [guide](../../general-guides/install) to setup reef-pi on Raspberry Pi 3.
+- Follow reef-pi installation [guide](../../guides/intro) to setup reef-pi on Raspberry Pi 3.
 
 - Enabling display in reef-pi configuration
 - Auto-starting dashboard on-boot

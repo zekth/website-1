@@ -5,6 +5,7 @@ linktitle: bom
 title: Bill of Materials
 highlight: true
 description: Bill of Materials
+draft: true
 weight: 4
 keywords:
 - reef-pi
@@ -14,7 +15,7 @@ keywords:
 - coral
 ---
 
-Due to the modular & DIY nature of reef-pi, different builds may require different parts. This **Bill of Materials** provides an exhaustive list of parts used in all the build guides and is enough to make an all in one reef-pi build. Use this as a reference. This list contains some options to pick and choose between components where applicable. We always recommend sourcing components locally but from reputed vendors. Pay extra attention to UL listed or similar quality mark for power supplies, user and livestock safety is of paramount importance. Read through the [electronics & wiring](/general-guides/electronics) guide to understand how to use this list.
+Due to the modular & DIY nature of reef-pi, different builds may require different parts. This **Bill of Materials** provides an exhaustive list of parts used in all the build guides and is enough to make an all in one reef-pi build. Use this as a reference. This list contains some options to pick and choose between components where applicable. We always recommend sourcing components locally but from reputed vendors. Pay extra attention to UL listed or similar quality mark for power supplies, user and livestock safety is of paramount importance. Read through the [electronics & wiring](/guides/electronics) guide to understand how to use this list.
 
 
 1. Raspberry Pi 3 or Pi zero

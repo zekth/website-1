@@ -1,8 +1,9 @@
 ---
+draft: true
 linktitle: power
 title: Power controller
 highlight: true
-weight: 1
+weight: 4
 keywords:
 - reef-pi
 - reef tank
@@ -11,6 +12,8 @@ keywords:
 - iot
 - relay
 ---
+Follow the beginner friendly [installation guide](https://learn.adafruit.com/reef-pi-installation-and-configuration) on learn.adafruit.com, it covers using reef-pi with American DJ power strip. This is not an option outside US or you want to customize your power controller further and have fine grained control over their behavior ([Normally Open/Normally Closed](https://en.wikipedia.org/wiki/Electrical_contacts), current rating, GFCI etc). This guide covers how to build a power controller from scratch, using individual relays and AC sockets and extra tips and tricks related to power controllers.
+
 
 Automated power strips allow on-demand and timer based control of AC outlets (110v or 220v). They are one of the easiest to build yet most useful controllers using reef-pi. For example, a power controller can turn on/off light or skimmer daily as well as allow on-demand controls like switching off ATO and return pump during water changes. This guide will go through step by step process of building a four outlet power controller. A beginner friendly [guide](https://learn.adafruit.com/reef-pi-power-controller) is also available on adafruit.com.
 
@@ -46,7 +49,7 @@ The reef-pi software uses the Raspberry Pi’s GPIO pins to control digital rela
 
 ### Install & Configure reef-pi
 
-- Follow the reef-pi installation [guide](/general-guides/install) to setup reef-pi on Raspberry Pi zero.
+- Follow the reef-pi installation [guide](/guides/install) to setup reef-pi on Raspberry Pi zero.
 
 - Enable equipment capability and turn off dev mode under setting section on system tab
 

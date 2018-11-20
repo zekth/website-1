@@ -3,8 +3,9 @@ linktitle: lighting
 author: "Ranjib Dey"
 date: 2017-09-25
 title: Lighting controller
+draft: true
 highlight: true
-weight: 4
+weight: 7
 keywords:
 - reef-pi
 - reef tank
@@ -61,7 +62,7 @@ Because Kessil lights expect 10-volt control signals instead of a 5-volt signal,
 
 ### Installation & Configuration
 
-- Follow reef-pi installation [guide](../../general-guides/install) to setup reef-pi on Raspberry Pi.
+- Follow reef-pi installation [guide](../../guides/intro) to setup reef-pi on Raspberry Pi.
 
 - Once reef-pi is installed and running go to systems page, enable lighting capability and reload reef-pi
 
