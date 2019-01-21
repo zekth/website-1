@@ -128,7 +128,7 @@ node ./test/smoke.js
 
 ### Running reef-pi on a raspberry pi
 
-It is likely you would want to test out a new feature on a physical raspberry pi once you have writtend the code for a new feature. The default make target will create development machine specific binary. For Raspberry Pi, reef-pi needs to be compiled for ARM 6 (raspberry pi zero) or ARM7 architecture. reef-pi's [Makefile](https://github.com/ranjib/reef-pi/blob/master/Makefile)
+It is likely you would want to test out a new feature on a physical raspberry pi once you have writtend the code for a new feature. The default make target will create development machine specific binary. For Raspberry Pi, reef-pi needs to be compiled for ARM 6 (raspberry pi zero) or ARM7 architecture. reef-pi's [Makefile](https://github.com/reef-pi/reef-pi/blob/master/Makefile)
 has predefined target for this. To create raspberry pi 3 or 2 specific binary, run
 
 ```
