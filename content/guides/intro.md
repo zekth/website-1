@@ -35,7 +35,7 @@ Following is a list of introductory guides on how to build reef-pi controller. S
   - [Auto Top Off]( https://learn.adafruit.com/reef-pi-water-level-controller)
   - [Light controller](https://learn.adafruit.com/reef-pi-lighting-controller)
   - [pH Monitor] (https://learn.adafruit.com/reef-pi-guide-7-ph-monitoring)
-  - [Dosing controller](https://learn.adafruit.com/reef-pi-guide-7-ph-monitoring)
+  - [Dosing controller](https://learn.adafruit.com/reef-pi-guide-5-dosing-controller)
 
 In addition to these guides, further documentation around customization and troubleshooting is provided in the [guides](/guides) section here.
 
