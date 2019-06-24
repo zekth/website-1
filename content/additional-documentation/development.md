@@ -98,6 +98,12 @@ make
 make start-dev
 ```
 
+- You can try out the API with curl. Save the auth cookie by signing in, before making any subsequent API calls.
+```
+curl -X POST -c cookie.txt -d '{"user":"reef-pi", "password":"reef-pi"}' http://localhost:8080/auth/signin
+curl -b cookie.txt http://localhost:8080/api/drivers
+```
+
 Head over to your browser [http://localhost:8080/](http://localhost:8080) to see the reef-pi in action.
 
 ### Running Automated Tests

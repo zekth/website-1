@@ -42,6 +42,8 @@ Following is assorted list of online resources related to reef-pi that you may f
 - [JonathonTroutt's](https://www.reef2reef.com/threads/troutts-reef-pi-build.521247/) build thread
 - [Diamond1's](https://www.reef2reef.com/threads/reef-pi-build.482170/) build thread
 - [Bigtrout's](https://www.reef2reef.com/threads/my-reef-pi-build-freshwater-style.531338/) build thread
+- [Mikeneedsahobby's](https://www.reef2reef.com/threads/electrical-idiot-builds-a-controller-a-reef-pi-build.540550/) build thread
+- [AquaRaider44's](https://www.reef2reef.com/threads/reef-pi-the-all-in-one-pi-challenge.592733/) build thread
 
 ## Extending reef-pi with other system
 
