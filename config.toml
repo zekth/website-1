@@ -25,10 +25,3 @@ Description = "reef-pi - An opensource reef tank controller based on Raspberry P
   identifier = "additional documentation"
   weight = 200
   url = "/additional-documentation/"
-
-[[menu.main]]
-  name = "blogs"
-  identifier = "blogs"
-  weight = 300
-  url = "/blogs/"
-
