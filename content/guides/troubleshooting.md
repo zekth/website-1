@@ -49,11 +49,66 @@ sudo systemctl start reef-pi.service
 - reef-pi uses the time settings from raspberry pi/raspbian. If timer are not acting as expected check if system time is configured correctly. Make sure timezone is configured correctly using **raspi-config**. 
 
 - reef-pi API can be used for a variety of troubleshooting purpose, specifically when the UI is problematic. To use the API, use curl. reef-pi uses cookie based authentication, users have to create a auth cookie first and then use it for all further API based operations. API covers all aspects of reef-pi and powers the UI. Here is an example of listing number of equipments
-```sh
+
+```
 curl -X POST -c cookie.txt -d '{"user":"reef-pi", "password":"reef-pi"}' http://reef-pi.local/auth/signin
 curl -b cookie.txt http://reef-pi.local/api/equipment
 ```
 API can be used to create backup, check a specific equipment, ato, ph probe etc, or to automate more complex workflows using ancillary scripts. 
+
+
+
+- Using reef-pi db command
+
+`reef-pi db` is a sub command made to update and retrive reef-pi data from the database itself bypassing controller and UI layer. It is intended to be used
+for troubleshooting and fixing reef-pi from data induced issues.
+```
+reef-pi db --help
+```
+```
+Usage of db:
+  -input string
+    	Input json file
+  -output string
+    	Output json file
+  -store string
+    	Database storage file (default "/var/lib/reef-pi/reef-pi.db")
+```
+All configuration and controller data in reef-pi are stored as elements in distinct buckets. Individual modules have their own buckets. For example, equipment details are stored
+inside the "equipment" bucket. reef-pi db command operates on buckets and elements inside a bucket. It is not aware of any other controller level details.
+
+Example use of the *db* command:
+
+List buckets:
+```
+sudo reef-pi db buckets
+```
+```
+analog_inputs
+ato
+ato_usage
+doser
+doser_usage
+drivers
+```
+
+List elements inside a bucket. Here each element in ato bucket represent individual ato's defined by the user.
+```
+sudo reef-pi db list ato
+```
+Show details of ato with id "1"
+```
+sudo reef-pi db show ato 1
+```
+Update details of ato with id 1
+```
+cat ato.json | sudo reef-pi db update
+```
+
+Delete analog input connector with id 1
+```
+sudo reef-pi db delete analog_inputs 1
+```
 
 
 - What information to share when asking for help? If you are still stuck, feel free to reach out to reef2reef thread on reef-pi. Please note down reef-pi version, Pi version, circuit details (an image will be very helpful) and shared those details while asking question. They help deducing the issues faster.
