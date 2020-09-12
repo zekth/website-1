@@ -2,6 +2,7 @@ name: Website PR test
 
 on:
   push:
+      - master
 
 jobs:
   build:
