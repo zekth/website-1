@@ -1,0 +1,32 @@
+name: Website PR test
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+       # require github PAT
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.74.2"
+      - run: |
+          git clone https://github.com/nurlansu/hugo-sustain.git themes/hugo-sustain
+      - name: Build
+        run: hugo --minify
+      - name: publish
+        run: |
+          git clone git@github.com:reef-pi/reef-pi.github.io.git website-bin
+          cd website-bin
+          git config --global user.name 'reef-pi'
+          git rm -r *
+          cd ..
+          cp -R ./dist ./website-bin
+          git add .
+          git commit -m "bot: update website"
